@@ -857,7 +857,7 @@ function initTimeline() {
   const dataset = params.get("dataset") || "russlanddeutsche";
 
   const script = document.createElement("script");
-  script.src = `../JS/timeline-data-${dataset}.js`;
+  script.src = `JS/timeline-data-${dataset}.js`;
   script.onload = () => {
     if (!window.timelineData) {
       console.error("Fehler: timelineData nicht geladen.");
