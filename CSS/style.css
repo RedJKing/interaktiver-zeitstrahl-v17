@@ -1,0 +1,976 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top: 80px; */
+  padding-top: var(--banner-height, 100px);
+  height: 100%;
+  /* overflow-y: auto; */
+  /* min-height: 100vh; */
+}
+
+/* Von daily-dev-tips.com; hat bisher leider nicht funktioniert */
+/* .content {
+  background: #ffffff;
+  flex: 1 0 auto;
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+:root {
+  --banner-height: 40px; /* Bannerhöhe anpassen */
+}
+
+/* anderes Banner
+#banner {
+  position: sticky;
+  top: 0;
+  background: #111;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+*/
+
+/* Banner-Styling */
+.banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;        /*   \ o_O /  "YOU SHALL NOT be used"  
+  justify-content: space-between;*/
+  display: grid;
+  grid-template-columns: 10% 10% 60% 10% 10%; /* Linke Seite flexibel, rechte kompakt */
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box;
+  height: auto;
+}
+
+/* Zentriert den Titel im mittleren Bereich */
+.banner-title-wrapper {
+  text-align: center;
+}
+
+.banner-title {
+  margin: 0;
+  font-size: 2.5rem;
+  /* flex-grow: 1; */
+  /* flex: 1 1 auto; */
+  /* flex: 1 1 60%; */
+  text-align: center;
+  /* word-break: break-word; */ /*deprecated = veraltet */
+  word-break: break-all;
+  /* min-width: 200px; */
+  /* padding-right: 10rem */
+  /* white-space: nowrap; 
+  overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  overflow-wrap: break-word; /* Bricht bei langen Wörtern */
+}
+
+@media (max-width: 600px) {
+  .banner-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner-title {
+    font-size: 2rem;
+  }
+}
+
+/* Rechte Seite für Menü */
+.burger-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 20px;
+}
+
+/* Burger Menü */
+.burger-menu {
+  position: relative;
+  /* right: 15%;
+  top: 1.5rem; */
+  z-index: 1001;
+  /*justify-self: end; /* Rechtsbündig im Grid */
+}
+
+.burger-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  background-color: #333;
+  border: 1px solid #444;
+  padding: 1rem;
+  min-width: 200px;
+  z-index: 9999;
+  border-radius: 4px;
+}
+
+.menu-content input.menu-search {
+  width: 100%;
+  padding: 0.3rem;
+  margin-bottom: 0.8rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.menu-content a {
+  color: white;
+  display: block;
+  margin: 0.3rem 0;
+  text-decoration: none;
+}
+
+.menu-content a:hover {
+  text-decoration: underline;
+}
+
+.menu-section-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  pointer-events: none; /* nicht klickbar */
+}
+
+.menu-divider {
+  margin: 0.8rem 0;
+  border: none;
+  border-top: 1px solid #666;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#searchInput {
+  width: 100%;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 8px;
+  top: 33%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  display: none;
+  color: #888;
+  z-index: 10;
+}
+
+.search-result {
+  color: white;
+  padding: 5px;
+  border-bottom: 1px solid #555;
+}
+
+.search-result:hover {
+  background-color: #444;
+}
+
+.event.highlight {
+  background-color: yellow;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.timeline-info-box.highlight {
+  background-color: yellow;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.sub-info-box.highlight {
+  background-color: yellow;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+#timeline-container {
+  position: relative;
+  width: 85vw;
+  margin-top: 20px;
+  /* margin-top: var(--banner-height, 100px); */
+
+    /* Notwendigkeit des Folgeteils? */
+  min-height: 100vh;          /* mindestens so hoch wie der Viewport */
+  height: auto;               /* automatisch wachsen; wichtig für potenziell lange Zeitsträhle, wie "Die Entwicklung der modernen Demokratie" oder so */
+  overflow-y: visible;        /* Überlauf nach unten erlauben */
+  z-index: 0;
+}
+
+#timeline-line {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  width: 4px;
+  background: black;
+  z-index: 1;
+}
+
+.centered-on-timeline { /* Soll eigentlich dabei helfen Elemente an dem Zeitstrahl auszurichten, sodass sie genau auf ihm liegen; klappt aber nicht wirklich, habe wahrscheinlich irgendwo vergessen die alten Werte damit auszutauschen */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-arrow {
+  position: absolute;
+  font-size: 25px;
+  color: black;
+  z-index: 3;
+  transform: translateX(-50%);
+}
+
+.timeline-arrow-top {
+  top: -23px;
+}
+
+/*.timeline-arrow-bottom {
+  /* top wird per JS gesetzt 
+}*/
+
+#year-labels {
+  position: absolute;
+  /* left: 8%; */
+  top: -4px;
+  text-align: right;
+  font-size: 24px;
+  font-family: serif;
+  z-index: 2;
+  pointer-events: none; /* Damit Klicks durchgehen, auch wenn die Zahlen obendrauf liegen. - Ist eigentlich kein Problem mehr, da die Zahlen sich beim Resize nun nicht mehr bewegen sollten, kann aber als Absicherung bleiben */
+  color: white;
+  -webkit-text-stroke: 0.9px #000000;
+}
+
+/* .decade-marker,
+.major-decade-marker {
+  position: absolute;
+  left: calc(9.625%);  /* um links vom Zeitstrahl zu sein
+  width: 26px;
+  height: 2px;
+  background-color: black;
+  z-index: 0;
+}
+
+.major-decade-marker {
+  height: 3px;
+  background-color: black;
+} */
+
+.event {
+  position: absolute;
+  /* left: 11%; */
+  background: #fff;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  /* width: 75%; */
+  max-width: 75%; /* Macht sie genau so breit, wie sie sein müssen */
+  border: 2px solid black; /* die schwarze Umrandung; Muss auf Rückmeldung warten */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.event-details {
+  display: none;
+  font-size: 1rem;
+  color: #000000;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
+}
+
+.event-details.active {
+  display: block;
+  margin-top: 20px;
+  max-height: 1000px; /* sollte groß genug für jeden Inhalt sein (hoffe die Bilder können skaliert werden) */
+  opacity: 1;
+  cursor: default;
+}
+
+.event-details .info-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.event-details .info-text {
+  flex: 1 1 60%;
+}
+
+.event-details .info-image {
+  flex: auto;
+  min-width: 150px;
+}
+
+.event-details h3 {
+  width: 100%;
+}
+
+.event-details .info-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.event-details .info-links {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.event-details .info-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background: #ddd;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.event-details .info-links a:hover {
+  background: #bbb;
+}
+
+@media (max-width: 600px) {
+  .event-details .info-content {
+    flex-direction: column;
+  }
+  .event-details .info-text {
+    order: 1;
+  }
+  .event-details .info-image {
+    order: 2;
+  }
+  .event-details .info-links {
+    order: 3;
+  }
+}
+
+.timeline-period {
+  position: absolute;
+  left: calc(10% + 2px);
+  width: 10px;
+  background-color: rgb(70, 131, 180); /* Farbe (und Tranzparenz) der Zeiträume ändern; Rückmeldung war, dass sie alle die selbe Farbe haben können, yippy */
+  border-radius: 6px;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 0.85em;
+  cursor: pointer;
+  z-index: 2; /* höherer Wert als der Zeitstrahl, da es AUF dem Zeitstrahl liegen soll */
+}
+
+.timeline-period:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 105%;
+  top: 50%; /* liegt mittig */
+  background-color: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.period-details {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-top: 12px;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.period-details.active {
+  display: block;
+}
+
+.sub-event-info {
+  margin: 8px 0 8px 25%;
+  padding: 10px 14px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  max-width: 75%;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  display: none;
+}
+.sub-event-info.active {
+  display: block;
+}
+
+.timeline-info-box {
+  position: absolute;
+  /* left: 18%; /* leicht rechts vom Zeitstrahl */
+  top: 0;
+  width: 62%;
+  /* max-width: 75%; /* Macht sie zwar genau so breit, wie sie sein müssen, doch setzt sie zu sehr in der Mitte und macht für diese Infoboxen ohnehin keinen Sinn, da sie mehr als eine Zeile Inhalt haben */
+  padding: 10px 14px;
+  background: #f4f4f4;
+  /* border: 1px solid #ccc; */
+  border: 2px solid black; /* schwarze Umrandung; Muss auf Rückmeldung warten */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+  cursor: default;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.timeline-info-box h3 {
+  width: 100%;
+}
+
+.timeline-info-box p {
+  flex: 1 1 60%;
+  min-width: 250px;
+}
+
+.timeline-info-box .info-image {
+  flex: 1 1 35%;
+  min-width: 150px;
+}
+
+.timeline-info-box .info-image img {
+  max-width: 70%;
+  max-height: 600px;
+  display: block;
+}
+
+.timeline-info-box .info-links {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.timeline-info-box .info-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background: #ddd;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.timeline-info-box .info-links a:hover {
+  background: #bbb;
+}
+
+/* Schmale Bildschirme → Bild unter Text, Links unter Bild */
+@media (max-width: 600px) {
+  .timeline-info-box {
+    flex-direction: column;
+  }
+  .timeline-info-box p {
+    order: 1;
+  }
+  .timeline-info-box .info-image {
+    order: 2;
+  }
+  .timeline-info-box .info-links {
+    order: 3;
+  }
+}
+
+/* ✖ Schließen-Button oben rechts in den Infokästen (außer Hauptevents!) */
+.timeline-info-box .close-btn {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.close-event-btn {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.close-event-btn:hover {
+  color: red;
+}
+
+/* "Drag-Griff" oder "Klebemarker" rechts; ging tatsächlich einfacher als erwartet...und es gibt schon ein Problem - Nein halt, es ist nur mit Eyetracker */
+.timeline-info-box .drag-handle {
+  position: absolute;
+  right: -34px; /* Sieht so aus, als ob es eigentlich dahinter liegt */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 40px;
+  background-color: #999;
+  cursor: move;
+  border-radius: 0 3px 3px 0;
+
+  background-image: url("../Bilder/drag-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px 50px;
+}
+
+.sub-info-box {
+  margin-top: 10px;
+  background: #fff7e6;
+  /* border-left: 4px solid orange; */
+  /* left: 20.5%; */
+  width: 62%;
+}
+
+/* Rote Marker/Punkte für Untergeschehnisse */
+.sub-event-dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(10% + 2px); /* halb so breit wie der Punkt selbst = -5px/2 */
+  z-index: 3;
+  cursor: pointer;
+}
+
+.sub-event-dot:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 120%;
+  background-color: #333;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  white-space: nowrap;
+}
+
+.event-connector-line {
+  position: absolute;
+  height: 2px;
+  background-color: red; /* Rot finde ich hier eigentlich sehr unangebracht, aber die anderen haben noch nichts dagegen gesagt, also müssen sie es wohl mögen */
+  z-index: 0;
+}
+
+/* Neuer Burger-Menü-Button (Icon); Bei Tagesschau.de sah der sehr cool aus */
+.burger-container {
+  --bar-width: 40px;
+  --bar-height: 4px;
+  --gap: 8px;
+  --foreground: white;
+  --transition: 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap); /* CSS Variablen der darüberliegenden Zeile bis zur darunterliegenden Zeile werden nicht statisch geprüft */
+  width: var(--bar-width);
+  height: calc(var(--bar-height) * 3 + var(--gap) * 2);
+  cursor: pointer;
+}
+
+.burger-line {
+  height: var(--bar-height);
+  width: 100%;
+  background-color: var(--foreground);
+  border-radius: 4px;
+  transition: all var(--transition);
+}
+
+/* Animation bei Aktivierung */
+.burger-container.open .line1 {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+.burger-container.open .line2 {
+  opacity: 0;
+}
+.burger-container.open .line3 {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+
+/* Um Layoutfehler bei verschiedenen Bildschirmbreiten zu vermeiden */
+.timeline-mark-line {
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background-color: black;
+  transform: translateX(-50%);
+  z-index: 0; /* unter den Zeiträumen */
+}
+
+.timeline-decade {
+  height: 2px;
+  background-color: black;
+}
+
+.timeline-year {
+  height: 3px;
+  background-color: black;
+}
+
+/* .site-footer {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+} */
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.option-panel {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  right: 25%; /* Positioniert rechts neben dem Menü */
+  background-color: #444;
+  color: white;
+  padding: 1rem;
+  border: 1px solid #666;
+  border-radius: 4px;
+  z-index: 9998;
+  min-width: 220px;
+}
+
+.option-panel h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #666;
+  padding-bottom: 0.4rem;
+}
+
+.option-panel label {
+  display: block;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+}
+
+/*
+#timeline-background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* hinter allem 
+  pointer-events: none;
+} */
+
+/*
+#timeline-background-image-old {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  /* opacity: 0.25; 
+  transition: opacity 0.6s ease-in-out;
+  transform: translateY(0%);
+  opacity: 0.6;
+  z-index: -2;
+} */
+
+/*
+#timeline-background-image-new {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  /* opacity: 0.25; 
+  transition: opacity 0.6s ease-in-out;
+  transform: translateY(0%);
+  opacity: 0.6;
+  z-index: -3;
+} */
+
+/*
+#timeline-image-pointer {
+  position: fixed;
+  left: 10%; /* links vom Zeitstrahl
+  top: 50%;
+  font-size: 30px;
+  color: red;
+  z-index: 100;
+  display: none;
+  transform: translateY(-50%);
+} */
+/*
+#timeline-image-pointer {
+  display: block;
+  position: absolute;
+  left: 60px;
+  width: 100px;
+  height: 100px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 18px solid red;
+  transform: translateX(0%);
+  z-index: 2;
+} */
+
+/*
+#slideshow-pointer {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  width: 30px;
+  height: 30px;
+  background: red;
+  z-index: 10;
+  transform: translateY(-50%);
+  border-radius: 50%;
+} */
+
+/*
+#timeline-background-slideshow {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100vh;
+  /* overflow: hidden;
+  /* pointer-events: none;
+} */
+
+/*
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: auto;
+  /* opacity: 0;
+  transition: opacity 0.5s ease-in-out; 
+  /* transform: translateY(0%);
+  /* transition: transform 0.2s ease; 
+  object-fit: cover;
+  will-change: transform;
+} */
+
+/*
+#slideshow-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#slideshow-strip img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.timeline-bg-section {
+  width: 100%;
+}
+*/
+
+/*
+#background-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Hinter dem Zeitstrahl
+} */
+/*
+#background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-image {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  /* will-change: transform; 
+} */
+
+/*
+#timeline-pointer {
+  position: fixed;
+  top: 50%;
+  left: 13%;
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+} */
+
+/* 
+#background-layer {
+  position: fixed; /* fixiert an der Viewport-Position 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  z-index: -1; /* hinter dem Zeitstrahl 
+}
+
+#background-layer img.background-image {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  object-fit: contain;
+}
+
+.background-image {
+  position: absolute;
+  left: 0;
+  width: 100%; /* skaliert auf Viewportbreite 
+  height: auto; /* Seitenverhältnis bleibt 
+} 
+
+#pointer {
+  position: fixed;
+  top: 50%;
+  left: 12%;
+  width: 10px;
+  height: 2px;
+  background: red;
+  z-index: 999;
+}
+*/
+
+
+/* cellspacing Attribut in der HTML-Tabelle ist obsolete */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* cellpadding Attribut in der HTML-Tabelle ist obsolete */
+td {
+  padding: 10px;
+}
+
+.sources-container {
+  max-width: 1000px;
+  margin: var(--banner-height, 100px) auto 40px auto;
+  padding: 0 20px;
+}
+
+.sources-container h1 {
+  margin-top: 20px;
+  border-bottom: 4px solid #969696;
+  padding-bottom: 5px;
+}
+
+.sources-container h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.sources-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sources-list li {
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  /* margin-left: 25%; */
+}
+
+.download-btn:hover {
+  background-color: #005bb5;
+}
+
+
+
+
+/*           Interaktiver Zeitstrahl v16     */
+/*           Property of Joshua Ilse         */

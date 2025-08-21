@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Impressum</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+  </head>
+
+  <body>
+    <!-- Banner mit Burger-Navigation -->
+    <header class="banner">
+      <div class="left-empty"></div>
+      <div class="left-empty"></div>
+
+      <div class="banner-title-wrapper">
+        <h1 class="banner-title">Impressum</h1>
+      </div>
+
+      <div class="burger-wrapper">
+        <div class="burger-menu" id="burgerMenu">
+          <div class="burger-container" id="burgerIcon">
+            <div class="burger-line line1"></div>
+            <div class="burger-line line2"></div>
+            <div class="burger-line line3"></div>
+          </div>
+
+          <div class="menu-content" id="menuContent">
+            <div class="menu-section-title">Zeitsträhle</div>
+              <a href="index.html?dataset=russlanddeutsche">Russlanddeutsche Migrationsgeschichte</a>
+              <a href="index.html?dataset=WeitererZeitstrahl">Weiterer Zeitstrahl</a>
+
+              <hr class="menu-divider">
+
+            <a href="home.html">Startseite</a>
+
+              <hr class="menu-divider">
+              
+            <a href="sources.html">Quellensammlung</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-empty"></div>
+
+    </header>
+      
+        <table style="width:60%;" class="center">
+          <tbody><tr>
+            <td class="center">
+              <p class="left">
+                <strong>Verantwortlich für den Zeitstrahl:</strong>
+              </p>
+              <p class="left">
+                Joshua Ilse<br>
+                E-Mail: Joshuailse07@web.de</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="center">
+              <p class="left">Joshua Ilse kann nicht garantieren, dass alle Texte frei von Urheberrecht oder Fehlern sind.<br>
+                Falls Sie einen Fehler, sowohl inhaltlicher Natur als auch bei der Darstellung der Texte, finden, einen Verbesserungsvorschlag oder auch ein anderes Anliegen haben, haben Sie die Möglichkeit es über die oben genannte E-Mail-Adresse mitzuteilen.<br> 
+                Bitte legen Sie passende Beweise und/oder Quellen vor, falls es sich um einen inhaltlichen Fehler handelt, sodass dessen Korrektur so schnell wie möglich implementiert werden kann.</p>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+      <!-- Footer (um professionell auszusehen) -->
+      <footer class="site-footer" style="text-align: center; padding: 20px; color: #000000; font-size: 0.9em;">
+        <hr style="margin-bottom: 10px;">
+        <p>&copy; 2025 · Schulprojekt – keine wissenschaftliche Quelle · Alle Angaben ohne Gewähr</p>
+      </footer>
+
+    <!-- Für v16 -->
+    <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+
+    
+      <!-- Extra-Script für diese Seite, da ich das Problem, dass script.js anscheinend nur für index.html funktioniert, nicht beheben konnte - Habe es zu meinen Gunsten genutzt, da die Seiten so unabhängiger sind -->
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const burgerIcon = document.getElementById("burgerIcon");
+          const menuContent = document.getElementById("menuContent");
+
+          burgerIcon.addEventListener("click", () => {
+          const open = burgerIcon.classList.toggle("open");
+          menuContent.style.display = open ? "block" : "none";
+          });
+
+          const banner = document.querySelector(".banner");
+          if (banner) {
+            const bannerHeight = banner.offsetHeight;
+            document.documentElement.style.setProperty('--banner-height', bannerHeight + 'px');
+          }
+          
+        });
+      </script>
+
+  </body>
+
+
+
+          <!-- Interaktiver Zeitstrahl v16 -->
+          <!-- Property of Joshua Ilse -->
+</html>

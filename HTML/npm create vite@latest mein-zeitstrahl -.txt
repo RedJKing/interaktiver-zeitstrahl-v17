@@ -1,0 +1,6 @@
+npm create vite@latest mein-zeitstrahl --template react
+cd mein-zeitstrahl
+npm install
+npm install @shadcn/ui tailwindcss
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
