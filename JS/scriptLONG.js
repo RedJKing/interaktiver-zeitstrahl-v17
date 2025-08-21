@@ -2335,5 +2335,5 @@ function enableDrag(element) {
 
 
 
-        // Interaktiver Zeitstrahl v16
+        // Interaktiver Zeitstrahl v17
         // Property of Joshua Ilse
