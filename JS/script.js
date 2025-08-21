@@ -8,7 +8,7 @@ function getDatasetFromURL() {
 
 function loadTimelineData(datasetName, callback) {
   const script = document.createElement("script");
-  script.src = `JS/timeline-data-${datasetName}.js`;
+  script.src = `../JS/timeline-data-${datasetName}.js`;
   script.onload = () => callback(window.timelineData);
   script.onerror = () => alert(`Daten für '${datasetName}' konnten nicht geladen werden.`);
   document.head.appendChild(script);
