@@ -13,7 +13,7 @@ window.timelineData = {
             year: 1763,
             text: "Die Zarin Katharina II. veröffentlichte am 22.07.1763 ein Manifest, den sogenannten „Kolonistenbrief“, das Siedler zur Ansiedlung im Russischen Reich einlud. Dieses Dokument, das sich insbesondere an deutsche Bauern und Handwerker richtete, garantierte zahlreiche Privilegien, wie Reisekostenübernahme, finanzielle Starthilfe, kostenloses Land, Selbstverwaltung auf lokaler Ebene, Schulunterricht in deutscher Sprache, Berufs-, Religions- und 30 Jahre Steuerfreiheit und die Befreiung vom Militärdienst.",
             keywords: ["Katharina", "Manifest", "Einladung", "Kolonistenbrief"],
-            image: "../Bilder/Russlanddeutsche/Manifest_oder_Kolonistenbrief.jpg", // optional
+            image: "Bilder/Russlanddeutsche/Manifest_oder_Kolonistenbrief.jpg", // optional
             links: [
                 { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Geschichte_der_Russlanddeutschen" },
                 { label: "Bundeszentrale für politische Bildung", url: "https://www.bpb.de/themen/migration-integration/russlanddeutsche/252006/von-der-anwerbung-unter-katharina-ii-bis-1917/" }
