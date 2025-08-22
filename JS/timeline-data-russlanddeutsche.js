@@ -5,6 +5,8 @@ window.timelineData = {
     // Habe erstmal ein Paar Dinge eingetragen, um die Darstellung im Zeitstrahl zu prüfen, während ich an ihm arbeite. Darf nicht vergessen die Texte aus meinem Word-Dokument hier einzutragen. 
     // Wenn etwas in Klammern gesetzt ist habe ich bei meiner Recherche sich wiedersprechende Angaben gefunden oder suche nach einer besseren Formulierung
 
+    // Quellenangaben sollen relativ zur index.html Datei gemacht werden, nicht relativ zu den JS-Dateien o.ä.
+    
     // export const events = [ // Wenn auf einem Webserver
     // const events = [
     events: [
