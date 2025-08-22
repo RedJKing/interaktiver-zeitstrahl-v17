@@ -392,8 +392,8 @@ body {
   left: calc(10% + 2px);
   width: 10px;
   background-color: rgb(70, 131, 180); /* Farbe (und Tranzparenz) der Zeiträume ändern; Rückmeldung war, dass sie alle die selbe Farbe haben können, yippy */
-  border-radius: 6px;
-  padding: 4px 8px;
+  border-radius: 5px;
+  padding: 4px 6px;
   box-sizing: border-box;
   font-weight: bold;
   font-size: 0.85em;
@@ -603,6 +603,17 @@ body {
   border-radius: 4px;
   font-size: 0.75em;
   white-space: nowrap;
+}
+
+/* unsichtbarer, größerer Klickbereich für die roten Punkte */
+.sub-event-dot::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: transparent;  /* bleibt unsichtbar */
 }
 
 .event-connector-line {
