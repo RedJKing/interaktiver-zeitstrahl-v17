@@ -609,10 +609,10 @@ body {
 .sub-event-dot::before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
   background: transparent;  /* bleibt unsichtbar */
 }
 
