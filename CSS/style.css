@@ -943,6 +943,14 @@ td {
   padding-bottom: 5px;
 }
 
+.sources-container h3 {
+  margin-top: 20px;
+}
+
+.sources-container h4 {
+  margin-top: 20px;
+}
+
 .sources-list {
   list-style: none;
   padding-left: 0;
