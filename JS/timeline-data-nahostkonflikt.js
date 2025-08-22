@@ -5,14 +5,164 @@ window.timelineData = {
     // export const events = [ // Wenn auf einem Webserver
     events: [
         { 
-            title: "Dies", 
-            year: 1, 
+            title: "Gründung des Staates Israel", 
+            year: 1948, 
             text: "",
-            keywords: [""], // optional
+            keywords: ["Ben Gurion"], // optional
             image: "../Bilder/XXX/XXX.jpg", // optional
             links: [
                 { label: "XXX", url: "https://XXX" } // optional
             ]
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 25, 
+            text: "",
+            keywords: [""],
+            image: "../Bilder/XXX/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
         },
         { 
             title: "Sind", 
