@@ -272,12 +272,23 @@ body {
   /* left: 8%; */
   top: -4px;
   text-align: right;
-  font-size: 24px; /* Auf Handys zu groß */
-  font-family: serif; /* Benötigt bessere Lösung (Unterscheidung zwischen Handy und PC?) */
+  font-size: 24px; /* Auf Handys zu groß, wenn waagerecht */
+  font-family: serif; /* Benötigt bessere Lösung (Unterscheidung zwischen Handy und PC?) - drehen */
   z-index: 2;
   pointer-events: none; /* Damit Klicks durchgehen, auch wenn die Zahlen obendrauf liegen. - Ist eigentlich kein Problem mehr, da die Zahlen sich beim Resize nun nicht mehr bewegen sollten, kann aber als Absicherung bleiben */
   color: white;
   -webkit-text-stroke: 0.9px #000000;
+  transform: rotate(0deg);
+  transform-origin: left center;
+  white-space: nowrap;  /* damit die Zahl nicht umbricht */
+}
+
+@media (max-width: 600px) {
+  .year-labels {
+    transform: rotate(-90deg);   /* Dreht die Zahl */
+    transform-origin: center left; /* Drehpunkt korrigieren */
+    left: -20px;   /* neu justieren, damit sie sichtbar bleibt */
+  }
 }
 
 /* .decade-marker,
