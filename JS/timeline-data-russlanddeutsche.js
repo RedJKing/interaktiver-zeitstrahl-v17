@@ -24,7 +24,7 @@ window.timelineData = {
             year: 1804,
             text: "Ein zweites Manifest führte zu einer weiteren Einwanderungswelle, insbesondere von Deutschen in die Südukraine.",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "XXX", url: "https://beispiel.de/karte" }
             ]
@@ -34,7 +34,7 @@ window.timelineData = {
             year: 1914, 
             text: "",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "XXX", url: "https://beispiel.de/karte" }
             ]
@@ -44,7 +44,7 @@ window.timelineData = {
             year: 1920, 
             text: "",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "XXX", url: "https://beispiel.de/karte" }
             ]
@@ -54,7 +54,7 @@ window.timelineData = {
             year: 1955, 
             text: "",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "XXX", url: "https://beispiel.de/karte" }
             ]
@@ -64,7 +64,7 @@ window.timelineData = {
             year: 1987, 
             text: "",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "XXX", url: "https://beispiel.de/karte" }
             ]
@@ -74,7 +74,7 @@ window.timelineData = {
             year: 1993, 
             text: "",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "XXX", url: "https://beispiel.de/karte" }
             ] 
@@ -84,7 +84,7 @@ window.timelineData = {
             year: 2025, 
             text: "",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "XXX", url: "https://beispiel.de/karte" }
             ] 
@@ -102,7 +102,7 @@ window.timelineData = {
             end: 1789,
             info: "Während der ersten Ansiedlungswelle, ausgelöst durch den „Kolonistenbrief“, kamen zwischen 1763 und 1774 rund 30.000 Zuwanderer, ein Großteil aus Hessen, Westfalen, Preußen und Norddeutschland nach Russland. Sie gründeten viele deutsche Siedlungen, hauptsächlich im Schwarzmeer- und unteren Wolgagebiet.",
             keywords: ["Ansiedlung", "Zuwanderung"],
-            image: "../Bilder/Russlanddeutsche/DeutscheAuswanderungnachRusslandvon1763bisMittedes19.Jahrhunderts.jpg",
+            image: "Bilder/Russlanddeutsche/DeutscheAuswanderungnachRusslandvon1763bisMittedes19.Jahrhunderts.jpg",
             links: [
                 { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Russlanddeutsche" },
                 { label: "Archivdokument", url: "https://beispiel.de/dokument.pdf" }
@@ -115,7 +115,7 @@ window.timelineData = {
                     date: "Ab dem 29. Juni 1764",
                     text: "Von 1763 bis 1767 kamen aus dem Rheinland und Hessen Kolonisten über die Nord- und Ostsee nach St. Petersburg, dann Moskau und gelangten schließlich ins Wolgagebiet bei Saratov, wo sie über 100 Dörfer gründeten. Jeder Familie, unter den fast 26.000 Siedlern, wurde etwa 30 Hektar Land zugesprochen, wobei diese aber mit der Bodenbeschaffenheit und dem Klima nicht vertraut waren, was, zusammen mit Seuchen, Überfällen und Fluchten, ihre Anzahl stark verringerte und das Leben im Wolgagebiet erschwerte. Bis 1850 erreichten sie dann aber eine faste Verzehnfachung der Bevölkerung auf über 150.000 Menschen und einen gewissen Wohlstand, wurden dann aber in der zweiten Hälfte des 19. Jahrhunderts von erneuten Missernten und Hungernöten heimgesucht.",
                     keywords: ["Kolonien", "Gründung", "Dörfer"],
-                    image: "../Bilder/Russlanddeutsche/512px-Flag_of_Volga_Germans_(version).svg.png", // optional
+                    image: "Bilder/Russlanddeutsche/512px-Flag_of_Volga_Germans_(version).svg.png", // optional
                     links: [
                         { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Wolgadeutsche" },
                         // { label: "Historische Karte", url: "XXX" }
@@ -128,7 +128,7 @@ window.timelineData = {
                     date: "(Juni) 1765",
                     text: "Eine der ersten bedeutenden Siedlungen im heutigen Gebiet der Ukraine. XXX.",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -140,7 +140,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -152,7 +152,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -165,7 +165,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -177,7 +177,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -189,7 +189,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -201,7 +201,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -213,7 +213,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -225,7 +225,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -237,7 +237,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -251,7 +251,7 @@ window.timelineData = {
             end: 1860,
             info: "XXX",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Russlanddeutsche" },
                 { label: "Archivdokument", url: "https://beispiel.de/dokument.pdf" }
@@ -264,7 +264,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -276,7 +276,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -288,7 +288,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -302,7 +302,7 @@ window.timelineData = {
             end: 1918,
             info: "XXX",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Russlanddeutsche" },
                 { label: "Archivdokument", url: "https://beispiel.de/dokument.pdf" }
@@ -315,7 +315,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -327,7 +327,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -339,7 +339,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -353,7 +353,7 @@ window.timelineData = {
             end: 1945,
             info: "XXX",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Russlanddeutsche" },
                 { label: "Archivdokument", url: "https://beispiel.de/dokument.pdf" }
@@ -366,7 +366,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -378,7 +378,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -390,7 +390,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -404,7 +404,7 @@ window.timelineData = {
             end: 1991,
             info: "XXX",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Russlanddeutsche" },
                 { label: "Archivdokument", url: "https://beispiel.de/dokument.pdf" }
@@ -417,7 +417,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -429,7 +429,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -441,7 +441,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -455,7 +455,7 @@ window.timelineData = {
             end: 2000,
             info: "XXX",
             keywords: [""],
-            image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
             links: [
                 { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Russlanddeutsche" },
                 { label: "Archivdokument", url: "https://beispiel.de/dokument.pdf" }
@@ -468,7 +468,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -480,7 +480,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -492,7 +492,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "XXX",
                     keywords: [""],
-                    image: "../Bilder/Russlanddeutsche/XXX.jpg", // optional
+                    image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
                     links: [
                         { label: "Historische Karte", url: "https://beispiel.de/karte" }
                     ]
@@ -507,7 +507,7 @@ window.timelineData = {
     // window.timelineImages = [
     backgroundImages: [
         {
-            src: "../Bilder/Russlanddeutsche/krieg.jpg",
+            src: "Bilder/Russlanddeutsche/krieg.jpg",
             alt: "Zweiter Weltkrieg",
             startYear: 1763,
             // endYear: 1945,
@@ -515,7 +515,7 @@ window.timelineData = {
             height: 1000
         },
         {
-            src: "../Bilder/Russlanddeutsche/wiederaufbau.webp",
+            src: "Bilder/Russlanddeutsche/wiederaufbau.webp",
             alt: "Wiederaufbau",
             startYear: 1800,
             // endYear: 1955,
@@ -523,7 +523,7 @@ window.timelineData = {
             height: 2066
         },
         {
-            src: "../Bilder/Russlanddeutsche/emigration.webp",
+            src: "Bilder/Russlanddeutsche/emigration.webp",
             alt: "Emigration",
             startYear: 1840,
             // endYear: 1991,
