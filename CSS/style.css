@@ -272,8 +272,9 @@ body {
   /* left: 8%; */
   top: -4px;
   text-align: right;
-  font-size: 24px;
-  font-family: serif;
+  font-size: 14px;
+  /* font-size: 24px;
+  font-family: serif; */ /* Auf Handys zu groß */
   z-index: 2;
   pointer-events: none; /* Damit Klicks durchgehen, auch wenn die Zahlen obendrauf liegen. - Ist eigentlich kein Problem mehr, da die Zahlen sich beim Resize nun nicht mehr bewegen sollten, kann aber als Absicherung bleiben */
   color: white;
