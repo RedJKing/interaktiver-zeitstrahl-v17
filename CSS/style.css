@@ -580,12 +580,15 @@ body {
 
 /* Rote Marker/Punkte für Untergeschehnisse */
 .sub-event-dot {
-  width: 10px;
-  height: 10px;
+  /* width: 10px;
+  height: 10px;     /* Frau Wolff hatte Probleme damit, die roten Punkte anzuklicken, weshalb sie vergrößert werden müssen.
+  left: calc(10% + 2px); /* halb so breit wie der Punkt selbst = -5px/2 */
+  width: 16px;
+  height: 16px;
+  left: calc(10% + 2px);
   background-color: red;
   border-radius: 50%;
   position: absolute;
-  left: calc(10% + 2px); /* halb so breit wie der Punkt selbst = -5px/2 */
   z-index: 3;
   cursor: pointer;
 }
