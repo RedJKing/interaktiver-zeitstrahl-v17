@@ -283,7 +283,7 @@ body {
   white-space: nowrap;  /* damit die Zahl nicht umbricht */
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .year-labels {
     transform: rotate(-90deg);   /* Dreht die Zahl */
     transform-origin: center left; /* Drehpunkt korrigieren */
