@@ -1,15 +1,14 @@
 window.timelineData = {
-    timelineTitle: "Der Nahostkonflikt", // Wenn auf einem Webserver, müsste dies anders gemacht werden
+    timelineTitle: "Der Nahostkonflikt", // Hier kann auch der Rest des Kurses beitragen.
 
-    // Geschehnisse; weitere können hier hinzugefügt werden. Um Text Gänsefüßchen zu geben ("Text.") muss man \"Text.\" schreiben.    
-    // export const events = [ // Wenn auf einem Webserver
+    // Geschehnisse; weitere können hier hinzugefügt werden. Um Text Gänsefüßchen zu geben ("Text.") muss man \"Text.\" schreiben. - Wenn man die deutschen Gänsefüßchen verwendet, ist das nicht notwendig.
     events: [
         { 
             title: "Gründung des Staates Israel", 
             year: 1948, 
             text: "",
-            keywords: ["Ben Gurion"], // optional
-            image: "../Bilder/XXX/XXX.jpg", // optional
+            keywords: ["Ben Gurion"], // optional; wenn weitere hinzugefügt werden sollen einfach wie folgt erweitern ["Keyword1", "Keyword2"].
+            image: "Bilder/Nahostkonflikt/XXX.jpg", // optional; wenn nicht benötigt, kann die Zeile gelöscht oder durch das Setzen von // am Anfang der Zeile deaktiviert werden.
             links: [
                 { label: "XXX", url: "https://XXX" } // optional
             ]
@@ -19,7 +18,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -29,7 +28,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -39,7 +38,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -49,7 +48,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -59,7 +58,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -69,7 +68,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -79,7 +78,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -89,7 +88,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -99,7 +98,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -109,7 +108,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -119,7 +118,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -129,7 +128,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -139,7 +138,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -149,7 +148,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -159,7 +158,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -169,7 +168,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -179,7 +178,7 @@ window.timelineData = {
             year: 50, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg",
+            image: "Bilder/Nahostkonflikt/XXX.jpg",
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -196,7 +195,7 @@ window.timelineData = {
             end: 22,
             info: "Und",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg",
+            image: "Bilder/Nahostkonflikt/XXX.jpg",
             links: [
                 { label: "XXX", url: "https://XXX" }
             ],
@@ -208,7 +207,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "Infos darüber",
                     keywords: [""],
-                    image: "../Bilder/XXX/XXX.jpg",
+                    image: "Bilder/Nahostkonflikt/XXX.jpg",
                     links: [
                         { label: "XXX", url: "https://XXX" }
                     ]
@@ -221,7 +220,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "Und Infos darüber",
                     keywords: [""],
-                    image: "../Bilder/XXX/XXX.jpg",
+                    image: "Bilder/Nahostkonflikt/XXX.jpg",
                     links: [
                         { label: "XXX", url: "https://XXX" }
                     ]
@@ -235,7 +234,7 @@ window.timelineData = {
             end: 48,
             info: "Zeitspannen",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg",
+            image: "Bilder/Nahostkonflikt/XXX.jpg",
             links: [
                 { label: "XXX", url: "https://XXX" }
             ],
@@ -247,7 +246,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "Mehr Infos...yay",
                     keywords: [""],
-                    image: "../Bilder/XXX/XXX.jpg",
+                    image: "Bilder/Nahostkonflikt/XXX.jpg",
                     links: [
                         { label: "XXX", url: "https://XXX" }
                     ]
@@ -260,7 +259,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "Und die Infos darüber",
                     keywords: [""],
-                    image: "../Bilder/XXX/XXX.jpg",
+                    image: "Bilder/Nahostkonflikt/XXX.jpg",
                     links: [
                         { label: "XXX", url: "https://XXX" }
                     ]

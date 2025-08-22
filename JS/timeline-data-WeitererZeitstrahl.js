@@ -9,7 +9,7 @@ window.timelineData = {
             year: 1, 
             text: "",
             keywords: [""], // optional
-            image: "../Bilder/XXX/XXX.jpg", // optional
+            image: "Bilder/XXX/XXX.jpg", // optional
             links: [
                 { label: "XXX", url: "https://XXX" } // optional
             ]
@@ -19,7 +19,7 @@ window.timelineData = {
             year: 25, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg", 
+            image: "Bilder/XXX/XXX.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -29,7 +29,7 @@ window.timelineData = {
             year: 50, 
             text: "",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg",
+            image: "Bilder/XXX/XXX.jpg",
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -46,7 +46,7 @@ window.timelineData = {
             end: 22,
             info: "Und",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg",
+            image: "Bilder/XXX/XXX.jpg",
             links: [
                 { label: "XXX", url: "https://XXX" }
             ],
@@ -58,7 +58,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "Infos darüber",
                     keywords: [""],
-                    image: "../Bilder/XXX/XXX.jpg",
+                    image: "Bilder/XXX/XXX.jpg",
                     links: [
                         { label: "XXX", url: "https://XXX" }
                     ]
@@ -71,7 +71,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "Und Infos darüber",
                     keywords: [""],
-                    image: "../Bilder/XXX/XXX.jpg",
+                    image: "Bilder/XXX/XXX.jpg",
                     links: [
                         { label: "XXX", url: "https://XXX" }
                     ]
@@ -85,7 +85,7 @@ window.timelineData = {
             end: 48,
             info: "Zeitspannen",
             keywords: [""],
-            image: "../Bilder/XXX/XXX.jpg",
+            image: "Bilder/XXX/XXX.jpg",
             links: [
                 { label: "XXX", url: "https://XXX" }
             ],
@@ -97,7 +97,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "Mehr Infos...yay",
                     keywords: [""],
-                    image: "../Bilder/XXX/XXX.jpg",
+                    image: "Bilder/XXX/XXX.jpg",
                     links: [
                         { label: "XXX", url: "https://XXX" }
                     ]
@@ -110,7 +110,7 @@ window.timelineData = {
                     date: "XXX XXX",
                     text: "Und die Infos darüber",
                     keywords: [""],
-                    image: "../Bilder/XXX/XXX.jpg",
+                    image: "Bilder/XXX/XXX.jpg",
                     links: [
                         { label: "XXX", url: "https://XXX" }
                     ]
