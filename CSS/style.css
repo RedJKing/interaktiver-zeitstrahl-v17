@@ -1,6 +1,6 @@
 /* verhindert automatische Anpassung durch Dark Mode */
 html {
-  color-scheme: only light;
+  color-scheme: light;
 }
 /*
 @media (prefers-color-scheme: dark) {
