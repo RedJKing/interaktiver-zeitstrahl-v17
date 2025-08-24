@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interaktiver Zeitstrahl</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+
+  <body>
+
+    <!-- Banner mit Burger-Navigation -->
+    <header class="banner">
+      <div class="left-empty"></div>
+      <div class="left-empty"></div>
+
+      <div class="banner-title-wrapper">
+        <h1 class="banner-title" id="bannerTitle">Lade Titel…</h1>
+      </div>
+
+      <div class="burger-wrapper">
+        <div class="burger-menu" id="burgerMenu">
+          <div class="burger-container" id="burgerIcon">
+            <div class="burger-line line1"></div>
+            <div class="burger-line line2"></div>
+            <div class="burger-line line3"></div>
+          </div>
+
+          <div class="menu-content" id="menuContent">
+            <!-- Nur auf index.html (nun timeline.html) -->
+            <div class="search-wrapper" id="searchWrapper"> 
+              <input type="text" placeholder="Suche..." class="menu-search" id="searchInput">
+              <span id="clearSearch" class="clear-btn" title="Feld leeren">×</span>
+            </div>
+            <div id="searchResults"></div>
+
+            <!-- <div id="menuLinks">
+              <a href="home.html">Zur Startseite</a>
+              <a href="impressum.html">Impressum</a>
+            </div> -->
+            <div class="menu-section-title">Zeitstrahle</div>
+              <a href="timeline.html?dataset=russlanddeutsche">Russlanddeutsche Migrationsgeschichte</a>
+              <a href="timeline.html?dataset=nahostkonflikt">Der Nahostkonflikt</a>
+              <a href="timeline.html?dataset=WeitererZeitstrahl">Weiterer Zeitstrahl</a>
+
+              <hr class="menu-divider">
+
+            <a href="index.html">Startseite</a>
+
+              <hr class="menu-divider">
+
+            <a href="sources.html">Quellensammlung</a>
+
+              <hr class="menu-divider">
+              
+            <a href="impressum.html">Impressum</a>
+
+              <hr class="menu-divider">
+
+            <a href="#" id="optionenButton">⚙️ Optionen</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-empty"></div>
+
+      <!-- Optionen-Fenster -->
+      <div id="optionPanel" class="option-panel">
+        <h3>Optionen</h3>
+        <label><input type="checkbox" id="toggleUnlimitedSubinfos"> Unbegrenzte Unterereignisse</label><br>
+        <label><input type="checkbox" id="toggleBackgroundImages"> Hintergrundbilder deaktivieren (WIP)</label>
+      </div>
+
+    </header>
+
+      
+<!--  <div id="background-container"></div> --> 
+<!--  <div id="timeline-pointer">➤</div> --> 
+<!--  <div id="pointer">➤</div> -->
+
+
+    <!-- <main class="content" id="mainContent"> -->
+
+      <!-- Zeitleiste; Inhalt steht am Anfang von script.js -->
+      <div id="timeline-container">
+        <div id="timeline-line"></div>
+
+        <!-- <div id="background-image-container"></div> -->
+        <!-- <div id="background-container"></div> -->
+        <!-- <div id="background-layer"></div> -->
+         
+        <div id="timeline-events"></div>
+        <div id="year-labels"></div>
+      </div>
+
+      
+      <!-- Bilder im Hintergrund; der Validator merkt zwar an, dass src nicht leer sein sollte, aber es ist so richtig, da die src beim scrollen automatisch gewechselt werden -->
+<!--  <div id="timeline-background-container">
+          <img id="timeline-background-image-old" src="" alt="">
+          <img id="timeline-background-image-new" src="" alt="">
+        <div id="timeline-image-pointer">➤</div>
+      </div> --> 
+
+<!--  <div id="timeline-background-slideshow">
+        <img class="bg-img" id="bg-prev" />
+        <img class="bg-img" id="bg-current" />
+        <img class="bg-img" id="bg-next" />
+        <div id="slideshow-pointer">➤</div>
+      </div> --> 
+
+<!--  <div id="timeline-background-slideshow">
+        <div id="slideshow-strip"></div>
+        <div id="slideshow-pointer">➤</div>
+      </div> --> 
+
+
+    <!-- </main> -->
+
+      <!-- <script type="module" src="script.js"></script> --> <!-- Wenn auf einem Webserver -->
+
+      <!-- Erst Daten laden -->
+      <script src="JS/timeline-data-russlanddeutsche.js"></script>
+      <!-- Danach Hauptlogik -->
+      <script src="JS/script.js"></script>
+
+    <!-- Für v16 -->
+<!--   <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+--> 
+
+    <!-- Footer (um professionell auszusehen) --> <!-- Habe 10+ Stunden an diesem Teil gesessen; ich lasse es auf der Seite des Zeitstrahls weg, ich weiß noch nicht mal mehr, wieso ich ihn unbedingt auf dieser Seite haben wollte! Habe den Großteil des Codes in den Failures-Ordner verbannt -->
+    <!-- <footer class="site-footer" style="text-align: center; padding: 20px; color: #000000; font-size: 0.9em;">
+      <hr> style="margin-bottom: 10px;">
+      <p>&copy; 2025 · Schulprojekt – keine wissenschaftliche Quelle · Alle Angaben ohne Gewähr</p>
+    </footer> -->
+
+  </body>
+
+
+
+          <!-- Interaktiver Zeitstrahl v17 -->
+          <!-- Property of Joshua Ilse -->
+</html>
