@@ -761,6 +761,7 @@ body {
 @media (max-width: 800px) {
   .option-panel {
     right: 10%;
+    top: calc(5rem + 21rem);
   }
 }
 
