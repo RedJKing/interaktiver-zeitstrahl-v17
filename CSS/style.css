@@ -283,12 +283,35 @@ body {
   white-space: nowrap;  /* damit die Zahl nicht umbricht */
 }
 
+/*
 @media (max-width: 800px) {
   #year-labels {
-    transform: rotate(-90deg);   /* Dreht die Zahl */
-    transform-origin: center; /* Drehpunkt korrigieren */
+    transform: rotate(-90deg);   /* Dreht die Zahl 
+    transform-origin: center; /* Drehpunkt korrigieren 
     top: 0;
-    left: -20px;   /* neu justieren, damit sie sichtbar bleibt */
+    left: -20px;   /* neu justieren, damit sie sichtbar bleibt 
+  }
+}
+*/
+
+.year-marker {
+  position: absolute;
+  font-size: 24px;
+  font-family: serif;
+  color: white;
+  -webkit-text-stroke: 0.9px #000000;
+  white-space: nowrap;
+  text-align: right;
+
+  /* Standard-Positionierung */
+  transform: translateX(-100%); 
+}
+
+@media (max-width: 800px) {
+  .year-marker {
+    transform: rotate(-90deg);      /* statt translate */
+    transform-origin: right top;    /* anpassen, damit sie neben dem Strich bleibt */
+    left: calc(var(--line-left) - 20px); /* oder z. B. 10px links vom Strich */
   }
 }
 
