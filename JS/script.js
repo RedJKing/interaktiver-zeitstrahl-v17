@@ -671,9 +671,19 @@ function renderTimeline(events = window.events, periods = window.periods) {
     label.style.top = (yOffset - 8) + "px";
     label.style.left = (lineLeft - 16) + "px"; // 16px Abstand links vom Strich
     label.style.textAlign = "right";
-    label.style.transform = "translateX(-100%)";
+    // label.style.transform = "translateX(-100%)";
     label.textContent = y;
     labelContainer.appendChild(label);
+
+    if (window.innerWidth <= 800) {
+      label.style.transform = "rotate(-90deg)";
+      label.style.transformOrigin = "right top";
+      label.style.left = (lineLeft - 90) + "px";
+      label.style.top = (yOffset - 19) + "px";
+    } else {
+      label.style.transform = "translateX(-100%)";
+      label.style.left = (lineLeft - 16) + "px";
+    }
   }
 
   // Events platzieren
