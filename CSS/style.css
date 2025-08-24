@@ -1,3 +1,13 @@
+/* verhindert automatische Anpassung durch Dark Mode */
+html {
+  color-scheme: only light;
+}
+/*
+@media (prefers-color-scheme: dark) {
+  /* Styles für Dark-Mode festlegen (erst Vorschläge sammeln)
+}
+*/
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -22,6 +32,8 @@ body {
 
 :root {
   --banner-height: 40px; /* Bannerhöhe anpassen */
+    color-scheme: light;
+    /*supported-color-schemes: light;*/
 }
 
 /* anderes Banner
