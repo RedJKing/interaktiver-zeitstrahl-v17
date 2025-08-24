@@ -32,7 +32,7 @@ body {
 
 :root {
   --banner-height: 40px; /* Bannerhöhe anpassen */
-    color-scheme: only light;
+    color-scheme: only light; /* Nur light-mode zulassen */
     /*supported-color-schemes: light;*/
 }
 
