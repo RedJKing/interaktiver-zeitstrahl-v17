@@ -712,7 +712,7 @@ body {
   display: none;
   position: absolute;
   top: 5rem;
-  right: 25%; /* Positioniert rechts neben dem Menü */
+  right: calc(15% + 20px); /* Positioniert rechts neben dem Menü */
   background-color: #444;
   color: white;
   padding: 1rem;
