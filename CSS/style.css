@@ -279,14 +279,14 @@ body {
   color: white;
   -webkit-text-stroke: 0.9px #000000;
   transform: rotate(0deg);
-  transform-origin: right center;
+  transform-origin: center;
   white-space: nowrap;  /* damit die Zahl nicht umbricht */
 }
 
 @media (max-width: 800px) {
   #year-labels {
     transform: rotate(-90deg);   /* Dreht die Zahl */
-    transform-origin: top right; /* Drehpunkt korrigieren */
+    transform-origin: center; /* Drehpunkt korrigieren */
     top: 0;
     left: -20px;   /* neu justieren, damit sie sichtbar bleibt */
   }
