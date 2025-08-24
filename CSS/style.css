@@ -284,7 +284,7 @@ body {
 }
 
 @media (max-width: 800px) {
-  .year-labels {
+  #year-labels {
     transform: rotate(-90deg);   /* Dreht die Zahl */
     transform-origin: center left; /* Drehpunkt korrigieren */
     left: -20px;   /* neu justieren, damit sie sichtbar bleibt */
@@ -712,7 +712,7 @@ body {
   display: none;
   position: absolute;
   top: 5rem;
-  right: calc(15% + 20px); /* Positioniert rechts neben dem Menü */
+  right: calc(10% + 300px); /* Positioniert rechts neben dem Menü */
   background-color: #444;
   color: white;
   padding: 1rem;
@@ -720,6 +720,12 @@ body {
   border-radius: 4px;
   z-index: 9998;
   min-width: 220px;
+}
+
+@media (max-width: 800px) {
+  .option-panel {
+    right: 10%;
+  }
 }
 
 .option-panel h3 {
