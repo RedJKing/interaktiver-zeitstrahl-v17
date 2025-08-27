@@ -120,7 +120,7 @@ window.timelineData = {
             keywords: ["Camp-David-Abkommen"],
             image: "Bilder/Nahostkonflikt/Camp_David,_Menachem_Begin,_Anwar_Sadat,_1978.jpg", 
             links: [
-                { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Camp-David-Abkommen" }
+                { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Camp-David-Abkommen" } // wird momentan nicht angezeigt, weil die Höhenbegrenzung (wegen der Bilder) ihre Platzierung nicht mehr zulässt.
             ] 
         },
         { 
