@@ -13,7 +13,7 @@ window.timelineData = {
         { 
             title: "„Kolonistenbrief“ von Katharina der Großen", 
             year: 1763,
-            text: "Die Zarin Katharina II. veröffentlichte am 22.07.1763 ein Manifest, den sogenannten „Kolonistenbrief“, das Siedler zur Ansiedlung im Russischen Reich einlud. Dieses Dokument, das sich insbesondere an deutsche Bauern und Handwerker richtete, garantierte zahlreiche Privilegien, wie Reisekostenübernahme, finanzielle Starthilfe, kostenloses Land, Selbstverwaltung auf lokaler Ebene, Schulunterricht in deutscher Sprache, Berufs-, Religions- und 30 Jahre Steuerfreiheit und die Befreiung vom Militärdienst.",
+            text: "Die Zarin Katharina II. veröffentlichte am 22.07.1763 ein Manifest, den sogenannten „Kolonistenbrief“, das Siedler zur Ansiedlung im Russischen Reich einlud.<br> Dieses Dokument, das sich insbesondere an deutsche Bauern und Handwerker richtete, garantierte zahlreiche Privilegien, wie Reisekostenübernahme, finanzielle Starthilfe, kostenloses Land, Selbstverwaltung auf lokaler Ebene, Schulunterricht in deutscher Sprache, Berufs-, Religions- und 30 Jahre Steuerfreiheit und die Befreiung vom Militärdienst.",
             keywords: ["Katharina", "Manifest", "Einladung", "Kolonistenbrief"],
             image: "Bilder/Russlanddeutsche/Manifest_oder_Kolonistenbrief.jpg", // optional
             links: [
@@ -115,7 +115,7 @@ window.timelineData = {
                     month: 6,
                     title: "Gründung von Dörfern im Wolgagebiet",
                     date: "Ab dem 29. Juni 1764",
-                    text: "Von 1763 bis 1767 kamen aus dem Rheinland und Hessen Kolonisten über die Nord- und Ostsee nach St. Petersburg, dann Moskau und gelangten schließlich ins Wolgagebiet bei Saratov, wo sie über 100 Dörfer gründeten. Jeder Familie, unter den fast 26.000 Siedlern, wurde etwa 30 Hektar Land zugesprochen, wobei diese aber mit der Bodenbeschaffenheit und dem Klima nicht vertraut waren, was, zusammen mit Seuchen, Überfällen und Fluchten, ihre Anzahl stark verringerte und das Leben im Wolgagebiet erschwerte. Bis 1850 erreichten sie dann aber fast eine Verzehnfachung der Bevölkerung auf über 150.000 Menschen und einen gewissen Wohlstand, wurden dann aber in der zweiten Hälfte des 19. Jahrhunderts von erneuten Missernten und Hungernöten heimgesucht.",
+                    text: "Von 1763 bis 1767 kamen aus dem Rheinland und Hessen Kolonisten über die Nord- und Ostsee nach St. Petersburg, dann Moskau und gelangten schließlich ins Wolgagebiet bei Saratov, wo sie über 100 Dörfer gründeten.<br> Jeder Familie, unter den fast 26.000 Siedlern, wurde etwa 30 Hektar Land zugesprochen, wobei diese aber mit der Bodenbeschaffenheit und dem Klima nicht vertraut waren, was, zusammen mit Seuchen, Überfällen und Fluchten, ihre Anzahl stark verringerte und das Leben im Wolgagebiet erschwerte.<br> Bis 1850 erreichten sie dann aber fast eine Verzehnfachung der Bevölkerung auf über 150.000 Menschen und einen gewissen Wohlstand, wurden dann aber in der zweiten Hälfte des 19. Jahrhunderts von erneuten Missernten und Hungernöten heimgesucht.",
                     keywords: ["Kolonien", "Gründung", "Dörfer"],
                     image: "Bilder/Russlanddeutsche/512px-Flag_of_Volga_Germans_(version).svg.png", // optional
                     links: [
