@@ -4,6 +4,26 @@ window.timelineData = {
     // Geschehnisse; weitere können hier hinzugefügt werden. Um Text Gänsefüßchen zu geben ("Text.") muss man \"Text.\" schreiben. - Wenn man die deutschen Gänsefüßchen verwendet, ist das nicht notwendig.
     events: [
         { 
+            title: "", 
+            year: 1896, 
+            text: "",
+            keywords: [""],
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "", 
+            year: 1917, 
+            text: "",
+            keywords: [""],
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
             title: "Gründung des Staates Israel", 
             year: 1948, 
             text: "",
@@ -15,7 +35,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1951, // bis 1956
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -25,7 +45,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1956, 
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -35,7 +55,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1967, 
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -45,7 +65,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1970, 
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -55,7 +75,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1973, 
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -65,7 +85,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1974, // eigentlich 1964, denn 1974 wurde die terroristische Abspaltung der PLO gegründet
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -75,7 +95,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1975, 
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -85,7 +105,38 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1977, 
+            text: "",
+            keywords: [""],
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Camp-David-Verhandlungen", 
+            year: 1978, 
+            text: "Am 1. September 1978 begannen in Camp David, dem Landsitz des US-Präsidenten in Maryland, die Verhandlungen zwischen Ägyptens Präsident Anwar as-Sadat, Israels Premierminister Menachem Begin und US-Präsident Jimmy Carter als Vermittler. Ziel war es, den jahrzehntelangen Konflikt zwischen Israel und Ägypten zu entschärfen und die Grundlagen für Frieden im Nahen Osten zu schaffen.%0D%0A Die Gespräche waren von Anfang an schwierig. Israel und Ägypten hatten sich in mehreren Kriegen gegenübergestanden, und das Misstrauen zwischen beiden Seiten war tief verwurzelt. In der abgeschiedenen Atmosphäre von Camp David versuchten die drei Staatschefs dennoch, Kompromisse zu finden. Dabei ging es um zentrale Fragen wie die Rückgabe der Sinai-Halbinsel, die Sicherheit Israels und die Rechte der Palästinenser.%0D%0A Unter der intensiven Vermittlung Carters wurde in den folgenden elf Tagen hart verhandelt, oft am Rande des Scheiterns. Mehrfach drohten Sadat oder Begin die Gespräche abzubrechen. Dennoch gelang es, nach schwierigen Diskussionen ein Rahmenabkommen zu entwickeln, das später als Camp-David-Abkommen bekannt wurde.%0D%0A Die Verhandlungen von Camp David gelten bis heute als Meilenstein der internationalen Diplomatie. Sie zeigten, dass auch in festgefahrenen Konflikten durch Dialog und Kompromissbereitschaft Fortschritte möglich sind.", // invisible characters - ChatGPT?
+            keywords: ["Camp-David-Abkommen"],
+            image: "Bilder/Nahostkonflikt/Camp_David,_Menachem_Begin,_Anwar_Sadat,_1978.jpg", 
+            links: [
+                { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Camp-David-Abkommen" }
+            ] 
+        },
+        { 
+            title: "Der Libanonkrieg", 
+            year: 1982, 
+            text: "Der Libanonkrieg von 1982 war ein entscheidender Einschnitt in der Geschichte des Nahen Ostens. Am 6. Juni 1982 begann Israel die militärische Operation „Frieden für Galiläa“, offiziell als Reaktion auf Anschläge der palästinensischen Befreiungsorganisation (PLO). Ziel war es, die PLO aus dem Südlibanon zu vertreiben, da von dort Raketenangriffe auf Nordisrael ausgingen.%0D%0A Der Krieg weitete sich jedoch rasch aus. Israel rückte bis nach Beirut vor und belagerte die Stadt mehrere Wochen lang. Der Konflikt führte zu schweren Kämpfen, großen Zerstörungen und einer hohen Zahl ziviler Opfer. Unter internationalem Druck musste die PLO schließlich im Sommer 1982 Beirut verlassen und ihre Kämpfer nach Tunis verlegen.%0D%0A Besonders in Erinnerung geblieben ist das Massaker in den palästinensischen Flüchtlingslagern Sabra und Schatila im September 1982, das von einer mit Israel verbündeten Miliz verübt wurde. Die Ereignisse lösten weltweit Empörung aus und führten auch in Israel selbst zu massiven Protesten.%0D%0A Der Libanonkrieg 1982 zeigte, wie komplex und verhärtet die politischen und militärischen Fronten im Nahen Osten waren. Obwohl Israel militärisch seine Ziele zunächst erreichte, verschärfte der Krieg langfristig die Spannungen in der Region und hinterließ tiefe Wunden im Verhältnis zwischen den beteiligten Gesellschaften.",
+            keywords: ["Frieden für Galiläa", "PLO", ""],
+            image: "Bilder/Nahostkonflikt/Libanonkrieg.jpg", 
+            links: [
+                { label: "Wikipedia-Artikel", url: "https://de.wikipedia.org/wiki/Libanonkrieg_1982" },
+                { label: "Bundeszentrale für politische Bildung", url: "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/288015/israel-und-aegypten-ein-frieden-auf-umwegen/" }
+            ] 
+        },
+        { 
+            title: "Sind", 
+            year: 1987, // bis 1993
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -95,7 +146,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1993, 
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -105,7 +156,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1995, 
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -115,7 +166,7 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
-            year: 25, 
+            year: 1996, 
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -123,66 +174,16 @@ window.timelineData = {
                 { label: "XXX", url: "https://XXX" }
             ] 
         },
-        { 
-            title: "Sind", 
-            year: 25, 
-            text: "",
-            keywords: [""],
-            image: "Bilder/Nahostkonflikt/XXX.jpg", 
-            links: [
-                { label: "XXX", url: "https://XXX" }
-            ] 
-        },
-        { 
-            title: "Sind", 
-            year: 25, 
-            text: "",
-            keywords: [""],
-            image: "Bilder/Nahostkonflikt/XXX.jpg", 
-            links: [
-                { label: "XXX", url: "https://XXX" }
-            ] 
-        },
-        { 
-            title: "Sind", 
-            year: 25, 
-            text: "",
-            keywords: [""],
-            image: "Bilder/Nahostkonflikt/XXX.jpg", 
-            links: [
-                { label: "XXX", url: "https://XXX" }
-            ] 
-        },
-        { 
-            title: "Sind", 
-            year: 25, 
-            text: "",
-            keywords: [""],
-            image: "Bilder/Nahostkonflikt/XXX.jpg", 
-            links: [
-                { label: "XXX", url: "https://XXX" }
-            ] 
-        },
-        { 
-            title: "Sind", 
-            year: 25, 
-            text: "",
-            keywords: [""],
-            image: "Bilder/Nahostkonflikt/XXX.jpg", 
-            links: [
-                { label: "XXX", url: "https://XXX" }
-            ] 
-        },
-        { 
-            title: "Hauptereignisse", 
-            year: 50, 
-            text: "",
-            keywords: [""],
-            image: "Bilder/Nahostkonflikt/XXX.jpg",
-            links: [
-                { label: "XXX", url: "https://XXX" }
-            ] 
-        },
+//        { 
+//            title: "Hauptereignisse", 
+//            year: 50, 
+//            text: "",
+//            keywords: [""],
+//            image: "Bilder/Nahostkonflikt/XXX.jpg",
+//            links: [
+//                { label: "XXX", url: "https://XXX" }
+//            ] 
+//        },
     ],
     // ];
 
@@ -191,8 +192,8 @@ window.timelineData = {
         periods: [
             {
             name: "Langjähriges Geschehnis",
-            start: 3,
-            end: 22,
+            start: 1951,
+            end: 1956,
             info: "Und",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg",
@@ -230,8 +231,8 @@ window.timelineData = {
 
         {
             name: "Noch ein langjähriges Ereignis",
-            start: 27,
-            end: 48,
+            start: 1987,
+            end: 1993,
             info: "Zeitspannen",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg",
