@@ -321,7 +321,8 @@ activeSubEvents = [];
         !e.target.closest('#searchResults') && 
         !e.target.closest('#clearSearch') && 
         !e.target.closest('#optionPanel') &&
-        !e.target.closest('#optionenButton')
+        !e.target.closest('#optionenButton') &&
+        !e.target.closest('#imageOverlay')
 
       ) {
       closeAllInfo();
@@ -698,17 +699,17 @@ function renderTimeline(events = window.events, periods = window.periods) {
     `; // Hauptereignistextdarstellung anpassen
 
   // Baue den HTML-Inhalt
-let eventHTML = `
-  <strong>${event.year}: ${event.title}</strong>
-  <div class="event-details">
-    <div class="info-header">
-      <span class="close-event-btn">✖</span>
-    </div>
-    <div class="info-content">
-      <div class="info-text">
-        ${event.text || ''}
+  let eventHTML = `
+    <strong>${event.year}: ${event.title}</strong>
+    <div class="event-details">
+      <div class="info-header">
+        <span class="close-event-btn">✖</span>
       </div>
-`;
+      <div class="info-content">
+        <div class="info-text">
+          ${event.text || ''}
+        </div>
+  `;
 
   // Falls Bild vorhanden → HTML ergänzen
   if (event.image) {
@@ -850,7 +851,8 @@ document.addEventListener("click", (e) => {
       !e.target.closest(".close-btn") && 
       !e.target.closest(".drag-handle") && 
       !e.target.closest('#optionPanel') &&
-      !e.target.closest('#optionenButton')
+      !e.target.closest('#optionenButton') &&
+      !e.target.closest('#imageOverlay')
 
     ) {
     document.querySelectorAll(".event-details.active").forEach(el => {
@@ -930,6 +932,57 @@ function enableDrag(element) {
   }
 }
 
+
+// ---- Overlay einmalig einrichten ----
+(function setupImageOverlayOnce() {
+  if (window.__overlaySetupDone) return;
+  window.__overlaySetupDone = true;
+
+  // Falls kein Overlay im HTML existiert: dynamisch anlegen
+  let overlay = document.getElementById('imageOverlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'imageOverlay';
+    // overlay.className = 'image-overlay';
+    overlay.innerHTML = '<img alt="Großansicht">';
+    document.body.appendChild(overlay);
+  }
+  const overlayImg = overlay.querySelector('img');
+
+  // 1) Klick auf ein Bild in einem Event -> Overlay öffnen
+  document.addEventListener('click', (e) => {
+    // const img = e.target.closest('.info-image img, .info-text img');
+    const img = e.target.closest('.info-image img') || e.target.closest('.info-text img');
+    if (!img) return;
+
+    
+    const overlay = document.getElementById('imageOverlay');
+    const overlayImg = overlay.querySelector('img');
+
+    overlayImg.src = img.src;             // gleiche Quelle anzeigen
+    overlay.style.display = 'flex';
+    document.body.classList.add('modal-open');
+  });
+
+  // 2) Klick auf Overlay-Hintergrund -> schließen
+  overlay.addEventListener('click', (e) => {
+    // Nur schließen, wenn man auf den Hintergrund (nicht das Bild) klickt
+    if (e.target === overlay) {
+      overlay.style.display = 'none';
+      overlayImg.src = '';
+      document.body.classList.remove('modal-open');
+    }
+  });
+
+  // 3) ESC schließt Overlay
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.style.display === 'flex') {
+      overlay.style.display = 'none';
+      overlayImg.src = '';
+      document.body.classList.remove('modal-open');
+    }
+  });
+})();
 
 
         // Interaktiver Zeitstrahl v17

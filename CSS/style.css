@@ -385,25 +385,26 @@ body {
   flex: 1 1 60%;
 }
 
+/* Container für das Bild */
 .event-details .info-image {
   flex: auto;
   min-width: 100px;
-  max-width: 100%;
-  width: auto;
-  max-height: 30vh;
-  height: auto;
-  object-fit: contain;
-  cursor: pointer; 
 }
 
 .event-details h3 {
   width: 100%;
 }
 
+/* Das Bild */
+.info-text img ,
 .event-details .info-image img {
-  max-width: 100%;
-  height: auto;
   display: block;
+  max-width: 100%;
+  width: auto;
+  max-height: 30vh;
+  height: auto;
+  object-fit: contain;
+  cursor: zoom-in; 
 }
 
 .event-details .info-links {
@@ -441,25 +442,33 @@ body {
 }
 
 /* Overlay-Hintergrund */
-.image-overlay {
+/* .image-overlay { */
+#imageOverlay {
   display: none; /* erst sichtbar, wenn aktiv */
+  /* display: flex;      /* wird beim Öffnen sichtbar */
   position: fixed;
-  top: 0;
+  /* top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100vh; */
+  inset: 0;
   background: rgba(0,0,0,0.8);
-  z-index: 9999;
+  z-index: 10000;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 
 /* Bild im Overlay */
-.image-overlay img {
+/* .image-overlay img { */
+#imageOverlay img {
   max-width: 90vw;
   max-height: 90vh;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  cursor: zoom-out;             /* Feedback fürs Schließen */
+  object-fit: contain;
 }
+body.modal-open { overflow: hidden; }  /* Scrollen verhindern, wenn Overlay offen */
 
 .timeline-period {
   position: absolute;
@@ -534,7 +543,6 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   z-index: 10;
   cursor: default;
-
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
