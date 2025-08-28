@@ -388,6 +388,7 @@ body {
 .event-details .info-image {
   flex: auto;
   min-width: 150px;
+  max-height: 30%;
 }
 
 .event-details h3 {
