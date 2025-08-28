@@ -14,11 +14,11 @@ window.timelineData = {
             ] 
         },
         { 
-            title: "", 
+            title: "Balfour-Erklärung", 
             year: 1917, 
-            text: "",
-            keywords: [""],
-            image: "Bilder/Nahostkonflikt/XXX.jpg", 
+            text: "Der britische Außenminister Arthur James Balfour verkündete am 2. November 1917 in einem Brief an Lionel Walter Rothschild, dass die britische Regierung eine Errichtung einer nationalen Heimstätte für das jüdische Volk in Palästina mit Wohlwollen betrachtet.<br> In der Balfour- Erklärung wird zudem versprochen, die bürgerlichen und religiösen Rechte der nicht- jüdischen Gemeinschaften in Palästina zu wahren.",
+            keywords: ["britische Regierung", "Rothschild"],
+            image: "Bilder/Nahostkonflikt/000-to3tv-jpg-100-1280xauto.jpg", 
             links: [
                 { label: "XXX", url: "https://XXX" }
             ] 
@@ -55,6 +55,16 @@ window.timelineData = {
         },
         { 
             title: "Sind", 
+            year: 1964, // eigentlich 1964, denn 1974 wurde die terroristische Abspaltung der PLO gegründet
+            text: "",
+            keywords: [""],
+            image: "Bilder/Nahostkonflikt/XXX.jpg", 
+            links: [
+                { label: "XXX", url: "https://XXX" }
+            ] 
+        },
+        { 
+            title: "Sind", 
             year: 1967, 
             text: "",
             keywords: [""],
@@ -76,16 +86,6 @@ window.timelineData = {
         { 
             title: "Sind", 
             year: 1973, 
-            text: "",
-            keywords: [""],
-            image: "Bilder/Nahostkonflikt/XXX.jpg", 
-            links: [
-                { label: "XXX", url: "https://XXX" }
-            ] 
-        },
-        { 
-            title: "Sind", 
-            year: 1974, // eigentlich 1964, denn 1974 wurde die terroristische Abspaltung der PLO gegründet
             text: "",
             keywords: [""],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
@@ -174,16 +174,16 @@ window.timelineData = {
                 { label: "XXX", url: "https://XXX" }
             ] 
         },
-//        { 
-//            title: "Hauptereignisse", 
-//            year: 50, 
-//            text: "",
-//            keywords: [""],
-//            image: "Bilder/Nahostkonflikt/XXX.jpg",
-//            links: [
+        { 
+            title: "Heute", 
+            year: 2025, 
+            text: "",
+            keywords: [""],
+            image: "",
+            links: [
 //                { label: "XXX", url: "https://XXX" }
-//            ] 
-//        },
+            ] 
+        },
     ],
     // ];
 

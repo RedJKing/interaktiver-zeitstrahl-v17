@@ -86,9 +86,9 @@ window.timelineData = {
             year: 2025, 
             text: "",
             keywords: [""],
-            image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
+            image: "", // optional
             links: [
-                { label: "XXX", url: "https://beispiel.de/karte" }
+//                { label: "XXX", url: "https://beispiel.de/karte" }
             ] 
         }
     ],
