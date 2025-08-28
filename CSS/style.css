@@ -387,8 +387,13 @@ body {
 
 .event-details .info-image {
   flex: auto;
-  min-width: 150px;
-  max-height: 30%;
+  min-width: 100px;
+  max-width: 100%;
+  width: auto;
+  max-height: 30vh;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer; 
 }
 
 .event-details h3 {
@@ -433,6 +438,27 @@ body {
   .event-details .info-links {
     order: 3;
   }
+}
+
+/* Overlay-Hintergrund */
+.image-overlay {
+  display: none; /* erst sichtbar, wenn aktiv */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bild im Overlay */
+.image-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .timeline-period {
