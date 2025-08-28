@@ -174,16 +174,16 @@ window.timelineData = {
                 { label: "XXX", url: "https://XXX" }
             ] 
         },
-//        { 
-//            title: "Hauptereignisse", 
-//            year: 50, 
-//            text: "",
-//            keywords: [""],
-//            image: "Bilder/Nahostkonflikt/XXX.jpg",
-//            links: [
+        { 
+            title: "Heute", 
+            year: 2025, 
+            text: "",
+            keywords: [""],
+            image: "",
+            links: [
 //                { label: "XXX", url: "https://XXX" }
-//            ] 
-//        },
+            ] 
+        },
     ],
     // ];
 
