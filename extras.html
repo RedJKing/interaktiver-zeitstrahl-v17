@@ -90,16 +90,15 @@
 
       <h1>Eigenen Zeitstrahl erstellen</h1>
       <p>
-        Auf dieser Seite erklären wir dir Schritt für Schritt, wie du deinen eigenen Zeitstrahl erstellen kannst. 
-        Keine Sorge – du brauchst keine Programmierkenntnisse. Lies einfach die Anleitung in Ruhe durch 
-        und folge den Schritten. Wir empfehlen, mit einem PC oder Laptop zu arbeiten.
+        Auf dieser Seite wird dir Schritt für Schritt erklärt, wie du deinen eigenen interaktiven Zeitstrahl erstellen kannst.<br>
+        Keine Sorge - du brauchst keine Programmierkenntnisse. Lies einfach die Anleitung in Ruhe durch und folge den Schritten. Es ist empfehlenswert, mit einem PC oder Laptop zu arbeiten.
       </p>
 
       <div class="step">
         <h2>1. Programm installieren</h2>
         <p>
-          Lade dir <strong>Visual Studio Code</strong> (kurz: VS Code) herunter und installiere es auf deinem Computer. 
-          Damit kannst du Dateien einfach bearbeiten.
+          Lade dir ein Programm zur Bearbeitung von Code, wie <strong>Visual Studio Code</strong> (kurz: VS Code), herunter und installiere es auf deinem Computer.<br> 
+          Du kannst auch ein anderes Programm zur Dateibearbeitung verwenden, doch das Gesehene wird dann wahrscheinlich nicht mehr den Anleitungsbildern entsprechen.
         </p>
         <div class="important">👉 Du findest den kostenlosen Download hier: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></div>
         <img src="Bilder/Anleitung/vscode-installieren.png" alt="Installation von Visual Studio Code">
@@ -108,12 +107,13 @@
       <div class="step">
         <h2>2. Vorlage kopieren</h2>
         <p>
-          Öffne den Ordner, in dem alle Dateien des Zeitstrahl-Projekts liegen. Kopiere die Datei 
-          <code>timeline-data-russlanddeutsche.js</code> und füge sie wieder in denselben Ordner ein.
-        </p>
-        <p>
-          Benenne sie danach so um, dass <code>XXX</code> durch dein Thema ersetzt wird. 
-          Beispiel: <code>timeline-data-industrialisierung.js</code>.
+          <!-- Auf github gehen -->
+          Öffne den Ordner "JS", in dem alle Dateien des Zeitstrahl-Projekts liegen.<br>
+          Klicke mit der rechten Maustaste auf die Datei <code>timeline-data-WeitererZeitstrahl.js</code> und öffne sie in <strong>Visual Studio Code</strong>.<br>
+          Wähle durch <strong>STRG/CTRL + A</strong> alles aus und kopiere es durch <strong>STRG/CTRL + C</strong>.<br>
+          Erstelle nun durch Rechtsklick in die obere Leiste in <strong>Visual Studio Code</strong> (dort wo auch der Name der gerade geöffneten Datei steht) eine neue Datei und füge den kopierten Code durch <strong>STRG/CTRL + V</strong> ein.<br>
+          Speichere diese neue Datei nun unter einem neuen Namen, indem du auf "Datei" und dann auf "Speichern als" klickst. Gebe nun <code>timeline-data-WeitererZeitstrahl.js</code>, wobei du "WeitererZeitstrahl" mit dem Thema deines Zeitstrahls ersetzts, ein und klicke auf "Speichern". <!-- Falls normalerweise bei "Speichern unter" nicht schon der "JS"-Ordner ausgewählt wird, sollte ich auch erklären, wie man zu diesem gelangt -->
+          Beispiel: <code>timeline-data-nahostkonflikt.js</code>.
         </p>
         <img src="Bilder/Anleitung/datei-umbenennen.png" alt="Datei umbenennen">
       </div>
@@ -121,12 +121,10 @@
       <div class="step">
         <h2>3. Ordner für Bilder anlegen</h2>
         <p>
-          Gehe in deinen Windows-Ordner <strong>Bilder</strong> und lege dort einen neuen Ordner mit 
-          dem Namen deines Themas an. Verschiebe alle Bilder, die du im Zeitstrahl nutzen möchtest, 
-          in diesen Ordner.
+          Gehe im Ordner des Zeitstrahl-Projekts auf den Ordner <strong>Bilder</strong> und lege dort einen neuen Ordner mit dem Namen deines Themas an. Verschiebe alle Bilder, die du im Zeitstrahl nutzen möchtest, in diesen Ordner.
         </p>
         <p>
-          Beispiel: <code>Bilder/Industrialisierung/</code>.
+          Beispiel: <code>Bilder/Nahostkonflikt/</code>.
         </p>
         <img src="Bilder/Anleitung/bilder-ordner.png" alt="Bilder-Ordner anlegen">
       </div>
@@ -134,16 +132,17 @@
       <div class="step">
         <h2>4. Inhalte eintragen</h2>
         <p>
-          Öffne deine Datei <code>timeline-data-XXX.js</code> in Visual Studio Code. Dort findest du 
-          die Vorlage mit zwei Hauptereignissen und einer Zeitspanne. 
+          Öffne deine Datei <code>timeline-data-XXX.js</code> in Visual Studio Code. Sie soll dir als füllbare Vorlage für deinen eigenen Zeitstrahl dienen. 
         </p>
         <p>Du kannst nun anpassen oder neue Einträge hinzufügen:</p>
         <ul>
-          <li><strong>Hauptereignisse (events):</strong> Jahreszahl, Titel, optional Text und Keywords</li>
+          <li><strong>Hauptereignisse (events):</strong> Jahreszahl, Titel, Text</li>
           <li><strong>Zeitspannen (periods):</strong> Name, Start- und Endjahr, Beschreibungstext</li>
           <li><strong>Unterereignisse (subEvents):</strong> Jahr, Monat, Titel, genauer Text</li>
-          <li><strong>Bilder:</strong> relativer Pfad wie <code>"Bilder/Industrialisierung/fabrik.jpg"</code></li>
-          <li><strong>Verlinkungen:</strong> im Text mit HTML: <code>&lt;a href="..."&gt;Link&lt;/a&gt;</code></li>
+          <li><strong>Infotext (text / info):</strong> Text in dem Infokasten</li>
+          <li><strong>Keywords (keywords):</strong> Mögliche Suchbegriffe</li>
+          <li><strong>Bilder (image):</strong> relativer Pfad wie <code>"Bilder/Nahostkonflikt/fabrik.jpg"</code> zu dem Bild, das im Infokasten angezeigt werden soll</li>
+          <li><strong>Verlinkungen (links):</strong> <code>&lt;a href="..."&gt;Link&lt;/a&gt;</code></li> <!-- Hier noch weiterschreiben -->
         </ul>
         <img src="Bilder/Anleitung/datei-bearbeiten.png" alt="Datei bearbeiten in VS Code">
       </div>
@@ -151,12 +150,21 @@
       <div class="step">
         <h2>5. Mehr Ereignisse hinzufügen</h2>
         <p>
-          In der Vorlage sind nur zwei Beispiele eingetragen. Um mehr Ereignisse einzutragen, 
-          kopiere einfach die vorhandenen Blöcke und füge weitere darunter ein.
+          In der Vorlage sind nur wenige Beispiele eingetragen. Um mehr Ereignisse einzutragen, kopiere mit <strong>STRG/CTRL + C</strong> einfach die vorhandenen Blöcke und füge sie durch <strong>STRG/CTRL + V</strong> genau unter den kopierten Blöcken ein. Achte dabei auch auf die Kommasetzung, die der der anderen Blöcke entsprechen sollte.
         </p>
+<!--
         <pre><code>
     // Beispiel Hauptereignis:
-    { title: "Gründung erster Fabriken", year: 1850, keywords: ["Industrie", "Fabrik"] },
+    { 
+      title: "Erster Weltkriegs „innerer Feind“", 
+      year: 1914, 
+      text: "",
+      keywords: [""],
+      image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
+      links: [
+          { label: "XXX", url: "https://beispiel.de/karte" }
+      ] 
+    },
 
     // Beispiel Zeitspanne:
     {
@@ -164,24 +172,30 @@
       start: 1760,
       end: 1840,
       info: "Große technische und gesellschaftliche Veränderungen.",
+      keywords: [""],
+      image: "Bilder/Russlanddeutsche/XXX.jpg", // optional
+      links: [
+          { label: "XXX", url: "https://beispiel.de/karte" }
+      ],
       subEvents: [
         { year: 1784, month: 3, title: "Erste Dampfmaschine", text: "Beschreibung..." }
       ]
     }
         </code></pre>
+-->
         <img src="Bilder/Anleitung/mehr-ereignisse.png" alt="Mehr Ereignisse hinzufügen">
       </div>
 
       <div class="step">
         <h2>6. Zeitstrahl im Menü verlinken</h2>
         <p>
-          Öffne die Dateien <code>index.html</code>, <code>home.html</code> und <code>impressum.html</code>. 
-          Suche dort den Menübereich, wo die Zeitstrahle aufgelistet sind. 
+          Öffne ALLE HTML-Dateien, die sich im HTML-Ordner befinden, durch Rechtsklick, in <strong>Visual Studio Code</strong>.<br>
+          Suche oben den Menübereich, wo die Zeitstrahle aufgelistet sind. 
         </p>
         <p>
-          Füge einen neuen Link ein, z. B.:
+          Füge in allen HTML-Dateien an dieser Stelle einen neuen Link zu deinem Zeitstrahl ein, z.B.:
         </p>
-        <pre><code>&lt;a href="index.html?dataset=industrialisierung"&gt;Industrialisierung&lt;/a&gt;</code></pre>
+        <pre><code>&lt;a href="index.html?dataset=nahostkonflikt"&gt;Der Nahostkonflikt&lt;/a&gt;</code></pre>
         <img src="Bilder/Anleitung/menue-link.png" alt="Neuen Link im Menü einfügen">
       </div>
 
@@ -191,7 +205,7 @@
           Jede Information und jedes Bild braucht eine ordentliche Quelle. 
         </p>
         <div class="important">
-          ⚠️ <strong>Wichtig:</strong> Schreibe niemals nur „Internet“ oder „Wikipedia“.  
+          ⚠️ <strong>Wichtig:</strong> Schreibe niemals nur „Internet“ oder „Wikipedia“.<br>
           Notiere immer:
           <ul>
             <li>Genauen Titel</li>
@@ -202,8 +216,8 @@
           </ul>
         </div>
         <p>
-          Prüfe außerdem, ob die Quelle vertrauenswürdig ist:  
-          Universitäten, Museen, wissenschaftliche Artikel = gut.  
+          Prüfe außerdem, ob die Quelle vertrauenswürdig ist, bevor du sie verwendest:<br>
+          Universitäten, Museen, wissenschaftliche Artikel = gut.<br>
           Anonyme Blogs ohne Nachweise = vorsichtig sein.
         </p>
         <img src="Bilder/Anleitung/quellen.png" alt="Quellenangabe Beispiel">
@@ -211,8 +225,10 @@
 
       <h2>Fertig!</h2>
       <p>
-        Dein eigener Zeitstrahl ist nun erstellt. Öffne die <code>index.html</code> im Browser 
-        und wähle im Menü dein Thema aus. Viel Erfolg!
+        Dein eigener Zeitstrahl sollte nun erstellt sein.<br>
+        Öffne die <code>timeline.html</code> im Browser und wähle im Menü dein Thema aus.<br> 
+        Wenn etwas nicht stimmt, schaue noch einmal über deinen Code. Im Notfall kannst du mich auch für Hilfe anschreiben.<br>
+        Viel Erfolg!
       </p>
 
 
