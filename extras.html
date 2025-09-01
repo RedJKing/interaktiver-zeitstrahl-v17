@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Extras</title>
     <link rel="stylesheet" href="CSS/style.css">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      h1, h2 {
+        color: #003366;
+      }
+      .step {
+        margin-bottom: 40px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #f9f9f9;
+      }
+      .step img {
+        display: block;
+        max-width: 100%;
+        margin: 15px auto;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+      .important {
+        background: #ffefc6;
+        padding: 10px;
+        border-left: 4px solid #e6b800;
+        margin: 10px 0;
+      }
+      code {
+        background: #eee;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+    </style>
   </head>
 
   <body>
@@ -50,7 +86,135 @@
 
     </header>
       
-      <!-- z.B. Anleitung zur Erstellung eines eigenen Zeitstrahls -->
+      <!-- Soll verschiedene ausklappbare Container enthalten, wie z.B. "Anleitung zur Erstellung eines eigenen Zeitstrahls" (kann aber auch "Eigenen Zeitstrahl erstellen" genannt werden), fürs Erste reicht aber auch eine Gesamtseite -->
+
+      <h1>Eigenen Zeitstrahl erstellen</h1>
+      <p>
+        Auf dieser Seite erklären wir dir Schritt für Schritt, wie du deinen eigenen Zeitstrahl erstellen kannst. 
+        Keine Sorge – du brauchst keine Programmierkenntnisse. Lies einfach die Anleitung in Ruhe durch 
+        und folge den Schritten. Wir empfehlen, mit einem PC oder Laptop zu arbeiten.
+      </p>
+
+      <div class="step">
+        <h2>1. Programm installieren</h2>
+        <p>
+          Lade dir <strong>Visual Studio Code</strong> (kurz: VS Code) herunter und installiere es auf deinem Computer. 
+          Damit kannst du Dateien einfach bearbeiten.
+        </p>
+        <div class="important">👉 Du findest den kostenlosen Download hier: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></div>
+        <img src="Bilder/Anleitung/vscode-installieren.png" alt="Installation von Visual Studio Code">
+      </div>
+
+      <div class="step">
+        <h2>2. Vorlage kopieren</h2>
+        <p>
+          Öffne den Ordner, in dem alle Dateien des Zeitstrahl-Projekts liegen. Kopiere die Datei 
+          <code>timeline-data-russlanddeutsche.js</code> und füge sie wieder in denselben Ordner ein.
+        </p>
+        <p>
+          Benenne sie danach so um, dass <code>XXX</code> durch dein Thema ersetzt wird. 
+          Beispiel: <code>timeline-data-industrialisierung.js</code>.
+        </p>
+        <img src="Bilder/Anleitung/datei-umbenennen.png" alt="Datei umbenennen">
+      </div>
+
+      <div class="step">
+        <h2>3. Ordner für Bilder anlegen</h2>
+        <p>
+          Gehe in deinen Windows-Ordner <strong>Bilder</strong> und lege dort einen neuen Ordner mit 
+          dem Namen deines Themas an. Verschiebe alle Bilder, die du im Zeitstrahl nutzen möchtest, 
+          in diesen Ordner.
+        </p>
+        <p>
+          Beispiel: <code>Bilder/Industrialisierung/</code>.
+        </p>
+        <img src="Bilder/Anleitung/bilder-ordner.png" alt="Bilder-Ordner anlegen">
+      </div>
+
+      <div class="step">
+        <h2>4. Inhalte eintragen</h2>
+        <p>
+          Öffne deine Datei <code>timeline-data-XXX.js</code> in Visual Studio Code. Dort findest du 
+          die Vorlage mit zwei Hauptereignissen und einer Zeitspanne. 
+        </p>
+        <p>Du kannst nun anpassen oder neue Einträge hinzufügen:</p>
+        <ul>
+          <li><strong>Hauptereignisse (events):</strong> Jahreszahl, Titel, optional Text und Keywords</li>
+          <li><strong>Zeitspannen (periods):</strong> Name, Start- und Endjahr, Beschreibungstext</li>
+          <li><strong>Unterereignisse (subEvents):</strong> Jahr, Monat, Titel, genauer Text</li>
+          <li><strong>Bilder:</strong> relativer Pfad wie <code>"Bilder/Industrialisierung/fabrik.jpg"</code></li>
+          <li><strong>Verlinkungen:</strong> im Text mit HTML: <code>&lt;a href="..."&gt;Link&lt;/a&gt;</code></li>
+        </ul>
+        <img src="Bilder/Anleitung/datei-bearbeiten.png" alt="Datei bearbeiten in VS Code">
+      </div>
+
+      <div class="step">
+        <h2>5. Mehr Ereignisse hinzufügen</h2>
+        <p>
+          In der Vorlage sind nur zwei Beispiele eingetragen. Um mehr Ereignisse einzutragen, 
+          kopiere einfach die vorhandenen Blöcke und füge weitere darunter ein.
+        </p>
+        <pre><code>
+    // Beispiel Hauptereignis:
+    { title: "Gründung erster Fabriken", year: 1850, keywords: ["Industrie", "Fabrik"] },
+
+    // Beispiel Zeitspanne:
+    {
+      name: "Industrielle Revolution",
+      start: 1760,
+      end: 1840,
+      info: "Große technische und gesellschaftliche Veränderungen.",
+      subEvents: [
+        { year: 1784, month: 3, title: "Erste Dampfmaschine", text: "Beschreibung..." }
+      ]
+    }
+        </code></pre>
+        <img src="Bilder/Anleitung/mehr-ereignisse.png" alt="Mehr Ereignisse hinzufügen">
+      </div>
+
+      <div class="step">
+        <h2>6. Zeitstrahl im Menü verlinken</h2>
+        <p>
+          Öffne die Dateien <code>index.html</code>, <code>home.html</code> und <code>impressum.html</code>. 
+          Suche dort den Menübereich, wo die Zeitstrahle aufgelistet sind. 
+        </p>
+        <p>
+          Füge einen neuen Link ein, z. B.:
+        </p>
+        <pre><code>&lt;a href="index.html?dataset=industrialisierung"&gt;Industrialisierung&lt;/a&gt;</code></pre>
+        <img src="Bilder/Anleitung/menue-link.png" alt="Neuen Link im Menü einfügen">
+      </div>
+
+      <div class="step">
+        <h2>7. Quellen sammeln</h2>
+        <p>
+          Jede Information und jedes Bild braucht eine ordentliche Quelle. 
+        </p>
+        <div class="important">
+          ⚠️ <strong>Wichtig:</strong> Schreibe niemals nur „Internet“ oder „Wikipedia“.  
+          Notiere immer:
+          <ul>
+            <li>Genauen Titel</li>
+            <li>Autor (falls vorhanden)</li>
+            <li>Seite oder Buch</li>
+            <li>Datum, wann du es gelesen hast</li>
+            <li>Bei Bildern: Fotograf/Urheber und Lizenz (z. B. CC BY-SA)</li>
+          </ul>
+        </div>
+        <p>
+          Prüfe außerdem, ob die Quelle vertrauenswürdig ist:  
+          Universitäten, Museen, wissenschaftliche Artikel = gut.  
+          Anonyme Blogs ohne Nachweise = vorsichtig sein.
+        </p>
+        <img src="Bilder/Anleitung/quellen.png" alt="Quellenangabe Beispiel">
+      </div>
+
+      <h2>Fertig!</h2>
+      <p>
+        Dein eigener Zeitstrahl ist nun erstellt. Öffne die <code>index.html</code> im Browser 
+        und wähle im Menü dein Thema aus. Viel Erfolg!
+      </p>
+
 
       <!-- Footer (um professionell auszusehen) -->
       <footer class="site-footer" style="text-align: center; padding: 20px; color: #000000; font-size: 0.9em;">
