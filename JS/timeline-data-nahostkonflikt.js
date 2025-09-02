@@ -1,6 +1,8 @@
 window.timelineData = {
     timelineTitle: "Der Nahostkonflikt", // Hier kann auch der Rest des Kurses beitragen.
 
+    permaExtended: false, // Hier entweder "true" oder "false" einsetzen, um zu bestimmen, ob der Zeitstrahl IMMER vergrößert sein soll oder nicht
+
     // Geschehnisse; weitere können hier hinzugefügt werden. Um Text Gänsefüßchen zu geben ("Text.") muss man \"Text.\" schreiben. - Wenn man die deutschen Gänsefüßchen verwendet, ist das nicht notwendig.
     events: [
         { 
