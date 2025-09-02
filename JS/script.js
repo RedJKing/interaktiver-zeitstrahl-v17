@@ -81,7 +81,7 @@ let backgroundImagesDisabled = localStorage.getItem("backgroundImagesDisabled") 
 let isZoomedIn = false; // dynamischer Zustand 
 
 // ==== Perma-Verlängerter-Modus ========
-let forceExtended = localStorage.getItem("forceExtended") === "true"; // Benutzer-Option 
+let forceExtended = localStorage.getItem("forceExtended") === "true"; // Benutzer-Option (Man kann sie auf allen Zeitstrahlen an und aus machen, doch, um Überlappen zu vermeiden, bleibt es bei Zeitstrahlen, die es spiziel festgelegt haben aktiv)
 
 function isExtendedMode() {
   return forceExtended || (window.timelineData?.permaExtended === true) || isZoomedIn;
