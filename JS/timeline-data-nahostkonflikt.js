@@ -70,7 +70,7 @@ window.timelineData = {
             keywords: ["Junikrieg"],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
-                { label: "Der Historiker Illan Pappe über den Sechstagekrieg", url: "https://das-palaestina-portal.de/Anlagen/Pappe%20Umbruch_print_161008-3.pdf#page=67" }
+                { label: "Der Historiker Ilan Pappe über den Sechstagekrieg", url: "https://das-palaestina-portal.de/Anlagen/Pappe%20Umbruch_print_161008-3.pdf#page=67" }
             ] 
         },
         { 
