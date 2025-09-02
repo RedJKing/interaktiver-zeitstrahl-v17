@@ -366,7 +366,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // renderBackgroundImages();
   });
 
+  document.getElementById("toggleForceExtended").addEventListener("change", (e) => {
+    forceExtended = e.target.checked;
+    localStorage.setItem("forceExtended", forceExtended);
+    renderTimeline();
+  });
 
+  
   // Menü öffnen/schließen per Klick
   burgerIcon.addEventListener("click", (e) => {
     e.stopPropagation();
