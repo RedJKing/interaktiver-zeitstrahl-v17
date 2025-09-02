@@ -137,7 +137,7 @@ window.timelineData = {
             ] 
         },
         { 
-            title: "Sind", 
+            title: "Erste Antifada", 
             year: 1987, // bis 1993
             text: "",
             keywords: [""],
