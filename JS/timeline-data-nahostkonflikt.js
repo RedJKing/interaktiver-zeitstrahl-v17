@@ -64,13 +64,13 @@ window.timelineData = {
             ] 
         },
         { 
-            title: "Sind", 
+            title: "Der Sechstagekrieg", 
             year: 1967, 
             text: "",
-            keywords: [""],
+            keywords: ["Junikrieg"],
             image: "Bilder/Nahostkonflikt/XXX.jpg", 
             links: [
-                { label: "XXX", url: "https://XXX" }
+                { label: "Der Historiker Illan Pappe über den Sechstagekrieg", url: "https://das-palaestina-portal.de/Anlagen/Pappe%20Umbruch_print_161008-3.pdf#page=67" }
             ] 
         },
         { 
