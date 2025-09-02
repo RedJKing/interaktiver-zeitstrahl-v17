@@ -1,6 +1,8 @@
 window.timelineData = {
     timelineTitle: "Zeitstrahlthema", // Wenn auf einem Webserver, müsste dies anders gemacht werden
 
+    permaExtended: false, // Hier entweder "true" oder "false" einsetzen, um zu bestimmen, ob der Zeitstrahl IMMER vergrößert sein soll oder nicht
+
     // Geschehnisse; weitere können hier hinzugefügt werden. Um Text Gänsefüßchen zu geben ("Text.") muss man \"Text.\" schreiben.    
     // export const events = [ // Wenn auf einem Webserver
     events: [
