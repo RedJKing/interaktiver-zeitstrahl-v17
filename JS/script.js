@@ -70,20 +70,28 @@ loadTimelineData(getDatasetFromURL(), (data) => {
 
 
 // Längeneinheit festlegen (Anzahl der Pixel pro Jahr)
-  const pixelsPerYear = 12; // kurzer Zeitstrahl bei Start
+const pixelsPerYear = 12; // kurzer Zeitstrahl bei Start
 
-  let isZoomedIn = false; // dynamischer Zustand 
+let isZoomedIn = false; // dynamischer Zustand 
 
-  let lastPeriodYOffset = null; // für das Zurückscrollen beim Zoom-Out
+// ==== Perma-Verlängerter-Modus ========
+let forceExtended = localStorage.getItem("forceExtended") === "true"; // Benutzer-Option 
 
-  function getEffectivePPY() {
-    return isZoomedIn ? pixelsPerYear * 10 : pixelsPerYear;
-  }
+function isExtendedMode() {
+  return forceExtended || (window.timelineData?.permaExtended === true) || isZoomedIn;
+}
+// ======================================
+
+let lastPeriodYOffset = null; // für das Zurückscrollen beim Zoom-Out
+
+function getEffectivePPY() {
+//  return isZoomedIn ? pixelsPerYear * 10 : pixelsPerYear;
+  return isExtendedMode() ? pixelsPerYear * 10 : pixelsPerYear;
+}
 
 let activeEvent = [];
 let activePeriod = null;
 let activeSubEvents = []; // Für die Verwaltung von mehreren, wenn die Option angeschaltet ist
-
 
 // ==== Zuletzt geöffnete oder angeklickte Infobox wird nach oben gebracht (funktioniert nur bei denen von Periods und Subevents) ====
 let highestZIndex = 10; // Startwert für Infoboxen
@@ -111,7 +119,7 @@ function onPeriodClick(periodData, barElement, yStart) {
   }
 
   closeAllInfo();        // <- erst alles schließen
-  isZoomedIn = true;     // <- dann Zoom aktivieren
+  isZoomedIn = true;     // <- dann Zoom aktivieren   // womöglich noch mit isExtendedMode() zu ersetzen, da aber nicht danach geprüft wird, eigentlich nicht
   renderTimeline();      // <- und neu zeichnen
 
   // Offset nach dem Zoom berechnen
@@ -510,7 +518,7 @@ searchInput.addEventListener("input", () => {
       const targetPeriod = result.data;
 
       // Zoom aktivieren und rendern
-      if (!isZoomedIn) {
+      if (!isZoomedIn) {  // mit isExtendedMode() ersetzen?
         isZoomedIn = true;
         renderTimeline();
       }
@@ -542,7 +550,7 @@ searchInput.addEventListener("input", () => {
                         ((result.data.month - 1) * getEffectivePPY() / 12) + 10;
 
       // Zoom aktivieren und neu zeichnen
-      if (!isZoomedIn) {
+      if (!isZoomedIn) {    // mit isExtendedMode() ersetzen?
         isZoomedIn = true;
         renderTimeline();
 
