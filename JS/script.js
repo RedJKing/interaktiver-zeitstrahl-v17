@@ -71,6 +71,12 @@ loadTimelineData(getDatasetFromURL(), (data) => {
 
 // Längeneinheit festlegen (Anzahl der Pixel pro Jahr)
 const pixelsPerYear = 12; // kurzer Zeitstrahl bei Start
+  
+// Globale Einstellungen
+// let allowMultipleSubinfo = false;
+// let backgroundImagesDisabled = false;
+let allowMultipleSubinfo = localStorage.getItem("allowMultipleSubinfo") === "true";
+let backgroundImagesDisabled = localStorage.getItem("backgroundImagesDisabled") === "true";
 
 let isZoomedIn = false; // dynamischer Zustand 
 
@@ -103,10 +109,6 @@ document.addEventListener("mousedown", (e) => {
   }
 });
 // ===================================================================================================================================
-  
-  // Globale Einstellungen
-  let allowMultipleSubinfo = false;
-  let backgroundImagesDisabled = false;
 
 
 // Klick auf Zeitabschnitt
@@ -357,12 +359,20 @@ document.addEventListener("DOMContentLoaded", () => {
     titleElement.textContent = window.timelineData.timelineTitle;
   }
 
+// ==== Checkboxen beim Laden korrekt setzen ====
+  document.getElementById("toggleUnlimitedSubinfos").checked = allowMultipleSubinfo;
+  document.getElementById("toggleBackgroundImages").checked = backgroundImagesDisabled;
+  document.getElementById("toggleForceExtended").checked = forceExtended;
+
+// ==== Event Listener zum Speichern ====
   document.getElementById("toggleUnlimitedSubinfos").addEventListener("change", (e) => {
     allowMultipleSubinfo = e.target.checked;
+    localStorage.setItem("allowMultipleSubinfo", allowMultipleSubinfo);
   });
 
   document.getElementById("toggleBackgroundImages").addEventListener("change", (e) => {
     backgroundImagesDisabled = e.target.checked;
+    localStorage.setItem("backgroundImagesDisabled", backgroundImagesDisabled);
     // renderBackgroundImages();
   });
 
@@ -372,7 +382,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTimeline();
   });
 
-  
+
   // Menü öffnen/schließen per Klick
   burgerIcon.addEventListener("click", (e) => {
     e.stopPropagation();
