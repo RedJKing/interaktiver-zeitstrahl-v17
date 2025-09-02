@@ -796,7 +796,7 @@ body.modal-open { overflow: hidden; }  /* Scrollen verhindern, wenn Overlay offe
 @media (max-width: 800px) {
   .option-panel {
     right: 10%;
-    top: calc(5rem + 21rem);
+    top: calc(5rem + 24rem);
   }
 }
 
