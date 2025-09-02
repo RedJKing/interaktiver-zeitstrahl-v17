@@ -119,7 +119,11 @@ function onPeriodClick(periodData, barElement, yStart) {
   }
 
   closeAllInfo();        // <- erst alles schließen
-  isZoomedIn = true;     // <- dann Zoom aktivieren   // womöglich noch mit isExtendedMode() zu ersetzen, da aber nicht danach geprüft wird, eigentlich nicht
+//  isZoomedIn = true;     // <- dann Zoom aktivieren   // womöglich noch mit isExtendedMode() zu ersetzen, da aber nicht danach geprüft wird, eigentlich nicht
+  if (window.timelineData?.permaExtended === true || forceExtended) {  // Nichts ändern -> bleibt immer verlängert
+  } else {
+    isZoomedIn = true;
+  }
   renderTimeline();      // <- und neu zeichnen
 
   // Offset nach dem Zoom berechnen
@@ -305,7 +309,12 @@ function closeAllInfo() {
 activeSubEvents.forEach(e => e.infoBox.remove());
 activeSubEvents = [];
 
-    isZoomedIn = false;   // <- Zoom zurücksetzen
+//    isZoomedIn = false;   // <- Zoom zurücksetzen
+    if (window.timelineData?.permaExtended === true || forceExtended) {
+    } else {
+      isZoomedIn = false;
+    }
+
     renderTimeline();     // <- Timeline neu mit weniger Zoom
 
     if (lastPeriodYOffset !== null) {
