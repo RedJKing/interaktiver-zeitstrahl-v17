@@ -360,6 +360,15 @@
       }
 
     });
+    document.addEventListener("click", (e) => {
+      const burgerIcon = document.getElementById("burgerIcon");
+      const menuContent = document.getElementById("menuContent");
+
+      if (!burgerIcon.contains(e.target) && !menuContent.contains(e.target)) {
+        burgerIcon.classList.remove("open");
+        menuContent.style.display = "none";
+      }
+    });
   </script>
 
 </body>

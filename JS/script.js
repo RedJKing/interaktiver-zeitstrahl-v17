@@ -966,7 +966,7 @@ function enableDrag(element) {
 }
 
 
-// ---- Overlay einmalig einrichten ----
+// ---- Overlay einmalig einrichten ---- // Muss noch überarbeiten
 (function setupImageOverlayOnce() {
   if (window.__overlaySetupDone) return;
   window.__overlaySetupDone = true;
