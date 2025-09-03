@@ -400,6 +400,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
       burgerIcon.classList.remove("open");
       menuContent.style.display = "none";
+      optionPanel.style.display = "none";
       }
     });
 
@@ -419,7 +420,7 @@ document.addEventListener("DOMContentLoaded", () => {
     optionPanel.style.display = isVisible ? "none" : "block";
   });
 
-  // Schließen beim Klicken außerhalb
+  // Schließen beim Klicken außerhalb (aus irgend einem Grund wird das Options-Menü aber NICHT geschlossen, wenn auf das Burger Menü geklickt wird)
   document.addEventListener("click", (e) => {
     if (
       !e.target.closest("#optionPanel") && 
