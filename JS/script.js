@@ -400,7 +400,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
       burgerIcon.classList.remove("open");
       menuContent.style.display = "none";
-      optionPanel.style.display = "none";
       }
     });
 
