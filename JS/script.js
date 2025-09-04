@@ -387,21 +387,26 @@ document.addEventListener("DOMContentLoaded", () => {
   burgerIcon.addEventListener("click", (e) => {
     e.stopPropagation();
     burgerIcon.classList.toggle("open");
-    menuContent.style.display = burgerIcon.classList.contains("open") ? "block" : "none";
+    const isOpen = burgerIcon.classList.contains("open");
+    menuContent.style.display = isOpen ? "block" : "none";
+
+    if (!isOpen) {
+      document.getElementById("optionPanel").style.display = "none";      // Wenn das Menü durch Anklicken des Burger-Icons geschlossen wird, wird auch das Optionspanel geschlossen
+    }
   });
 
-    // Menü schließen beim Klick außerhalb
-    document.addEventListener("click", (e) => {
-      if (
-        !burgerIcon.contains(e.target) && 
-        !menuContent.contains(e.target) &&
-        !e.target.closest("#optionPanel") &&
-        !e.target.closest("#optionenButton")
-      ) {
-      burgerIcon.classList.remove("open");
-      menuContent.style.display = "none";
-      }
-    });
+  // Menü schließen beim Klick außerhalb
+  document.addEventListener("click", (e) => {
+    if (
+      !burgerIcon.contains(e.target) && 
+      !menuContent.contains(e.target) &&
+      !e.target.closest("#optionPanel") &&
+      !e.target.closest("#optionenButton")
+    ) {
+    burgerIcon.classList.remove("open");
+    menuContent.style.display = "none";
+    }
+  });
 
   // Bei Bildschirmveränderung den Zeitstrahl neu zeichnen
   window.addEventListener("resize", () => {
